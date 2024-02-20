@@ -1,0 +1,98 @@
+@import '../../themes';
+
+.container{
+    display: flex;
+    flex-direction: column;
+    width: 40%; 
+}
+
+@mixin box{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+}
+
+.firstBox{
+    display: flex;
+    justify-content: center;
+    width: 100%;
+    flex: 1;
+}
+
+.imageBox{
+    @include box;
+    width: 390px;
+    height: 240px;
+    position: relative;
+}
+
+.secondBox{
+    @include box;
+    flex: 2;
+}
+
+.lastBox{
+    @include box;
+    flex: 1;
+    margin-top: 5%;
+}
+
+
+.fixedButton {
+    position: absolute;
+    top: 33%; // Ajuste conforme necessário
+    right: 5%; // Ajuste conforme necessário
+    padding: 0.5rem 0.9rem;
+    background-color: white;
+    color: black;
+    border: none;
+    border-radius: 2rem;
+    cursor: pointer;
+    transform: rotate(-15deg);
+    display: flex;
+    align-items: center;
+}
+
+.text{
+    font-size: 3rem;
+    color: $text;
+    font-weight: 800;
+    width: 100%;
+    text-align: center;
+}
+
+
+@media (max-width: 855px) {
+
+    .imageBox{
+        @include box;
+        width: 300px;
+        height: 180px;
+        position: relative;
+        
+    }
+    .text{
+        font-size: 2rem;
+        color: $text;
+        font-weight: 800;
+        width: 100%;
+        text-align: center;
+    }
+    .container{
+        display: flex;
+        flex-direction: column;
+        width: 100%; 
+    }
+}
+
+@media (max-width: 1300px){
+    .container{
+        display: flex;
+        flex-direction: column;
+        width: 100%; 
+    }
+ 
+}
+
+
