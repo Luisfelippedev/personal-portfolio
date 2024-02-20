@@ -13,9 +13,9 @@ export const Button = ({ children, color, size, isIcon }: Props) => {
   return (
     <button
       style={{
-        width: size === "small" ? "5rem" : size === "medium" ? "7rem" : "10rem",
+        width: '100%',
         justifyContent: isIcon && size === "large" ? "space-around" : "center",
-        padding: isIcon && size === "large" ? "3.5% 16%" : "3.5% 9%",
+        padding: isIcon && size === "large" ? "3% 10%" : "3% 9%",
       }}
       className={
         color == "primary" ? styles.ButtonPrimary : styles.ButtonSecondary

@@ -1,0 +1,26 @@
+@import '../../themes/index.scss';
+
+.HeaderContainer{
+    display: flex;
+    flex-direction: column;
+    background-color: white;
+    height: 100vh;
+    width: 100%;
+}
+
+.firstSection{
+    display: flex;
+    flex-direction: column;
+    background-color: $background-900;
+    height: 75%;
+    border-bottom-left-radius: 100px;
+    border-bottom-right-radius: 100px;
+    align-items: center;
+    padding: 3% 5% 10% 5% ;
+}
+
+.lastSection{
+    display: flex;
+    flex: 1;
+    background-color: blue;
+}
