@@ -33,7 +33,7 @@ export const PresentationContainer = () => {
             </div>
           </div>
           <button className={styles.fixedButton}>
-            <p className={styles.myButton}>Meu Botão</p>
+            <p className={styles.myButton}>Luis Felipe</p>
             
             <div className={styles.imageAdeus}>
               <Image
@@ -57,7 +57,10 @@ export const PresentationContainer = () => {
       <div className={styles.lastBox}>
         <div className={styles.buttonProjects}>
           <Button isIcon color="secondary">
-            Projetos
+            <p className={styles.buttonText}>
+              Projetos
+            </p>
+            
           </Button>
         </div>
       </div>

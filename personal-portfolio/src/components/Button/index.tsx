@@ -6,9 +6,10 @@ type Props = {
   children: ReactNode;
   color: "primary" | "secondary";
   isIcon?: boolean;
+  iconSize?: "small" | "large"
 };
 
-export const Button = ({ children, color, isIcon }: Props) => {
+export const Button = ({ children, color, isIcon, iconSize}: Props) => {
   return (
     <button
       style={{
@@ -23,7 +24,7 @@ export const Button = ({ children, color, isIcon }: Props) => {
     >
       <div className={styles.contentButton}>
         {children}
-        {isIcon ? <SouthIcon fontSize="small" /> : null}
+        {isIcon ? <SouthIcon fontSize='medium' /> : null}
       </div>
     </button>
   );
