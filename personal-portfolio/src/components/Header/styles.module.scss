@@ -1,27 +1,78 @@
 @import '../../themes/index.scss';
 
+
+.headerBackground{
+    height: 100vh;
+    width: 100%;
+    // background-color: $background-900;
+    background: linear-gradient(135deg, #f2f2f2, #d8d8d8);
+   
+    
+
+
+}
+
 .HeaderContainer{
     display: flex;
     flex-direction: column;
-    background-color: white;
-    height: 100vh;
+    height: 100%;
     width: 100%;
+}
+
+.firstSectionBackground{
+    display: flex;
+    background-color: white;
+    height: 75%;
 }
 
 .firstSection{
     display: flex;
     flex-direction: column;
-    background-color: $background-900;
-    height: 75%;
+    // background-color: $background-900;
+    background: linear-gradient(135deg, #f2f2f2, #d8d8d8);
+
+    
+    
+    
+    
+    
+    
+    height: 100%;
+    width: 100%;
     border-bottom-left-radius: 100px;
     border-bottom-right-radius: 100px;
     align-items: center;
     padding: 3% 5% 10% 5% ;
+
+}
+
+.presentationContainer{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 100%;
+    width: 100%;
+   margin-top: 3%;
+
 }
 
 .lastSection{
     display: flex;
-    flex: 1;
+    height: 100%;
     background-color: white;
+    border-bottom-left-radius: 100px;
+    border-bottom-right-radius: 100px;
     border: 1px solid black;
+    overflow: hidden;
+    width: 100%;
+    padding: 10% 10%;
+    align-items: center;
 }
+
+.carousel{
+    width: 100%;
+    background-color: red;
+
+
+}
+
