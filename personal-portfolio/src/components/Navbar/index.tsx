@@ -8,26 +8,26 @@ export const Navbar = () => {
       <div className={styles.firstBox}>
         <div className={styles.emailIcon}>
           <p className={styles.text}>luis2015.sjp@gmail.com</p>
-          <ContentCopyIcon sx={{height: 20}} />
-        </div>
-
-          <div className={styles.buttonCopy}>
-              <Button size="medium" color="primary">
-                Copy
-              </Button>
+          <div className={styles.copyIcon}>
+            <ContentCopyIcon style={{height: '100%'}} />
           </div>
           
+        </div>         
+
           <div className={styles.buttonCV}>
-              <Button size="medium" color="primary">
-              CV
+              <Button color="primary">
+                <p className={styles.textCV}>
+                  CV
+                </p>
+              
             </Button>
           </div>
 
       </div>
       <div className={styles.lastBox}>
-        <p className={styles.text}>Linkedin</p>
+        <p className={styles.text}>LinkedIn</p>
         <p className={styles.text}>/</p>
-        <p className={styles.text}>Github</p>
+        <p className={styles.text}>GitHub</p>
       </div>
     </div>
   );

@@ -9,6 +9,9 @@ export const Header = () => {
         <Navbar />
         <PresentationContainer />
       </div>
+      <div className={styles.lastSection}>
+
+      </div>
     </div>
   );
 };

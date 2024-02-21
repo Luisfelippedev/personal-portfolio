@@ -3,7 +3,7 @@
 .container{
     display: flex;
     flex-direction: column;
-    width: 40%; 
+    width: 60%; 
 }
 
 @mixin box{
@@ -23,7 +23,7 @@
 .imageBox{
     @include box;
     width: 390px;
-    height: 240px;
+    height: 242px;
     position: relative;
 }
 
@@ -43,7 +43,7 @@
     position: absolute;
     top: 33%; // Ajuste conforme necessário
     right: 5%; // Ajuste conforme necessário
-    padding: 0.5rem 0.9rem;
+    padding: 0.2rem 0.9rem;
     background-color: white;
     color: black;
     border: none;
@@ -55,44 +55,151 @@
 }
 
 .text{
-    font-size: 3rem;
+    font-size: 2.4rem;
     color: $text;
     font-weight: 800;
     width: 100%;
     text-align: center;
 }
 
+.buttonProjects{
+    width: 13rem;
+    height: 4rem;
+    margin-top: 2%;
+}
 
-@media (max-width: 855px) {
+.imageAdeus{
+    position: relative;
+    width: 1.5rem;
+    height: 1.5rem;
+    border: 3px solid white;
+}
+
+.myButton{
+    font-size: 0.9rem;
+}
+
+
+@media (max-width: 430px) {
 
     .imageBox{
-        @include box;
-        width: 300px;
+        width: 290px;
         height: 180px;
         position: relative;
-        
+    }
+
+    .text{
+        font-size: 1.6rem;
+    }
+
+    .container{
+        width: 100%; 
+    }
+
+    .buttonProjects{
+        width: 11rem;
+        height: 3.4rem;
+        margin-top: 2%;
+    }
+
+    .imageAdeus{
+        width: 1.3rem;
+        height: 1.3rem;
+    }
+
+    .myButton{
+        font-size: 0.7rem;
+    }
+    
+    
+}
+
+
+@media (min-width: 1440px){
+    .text{
+        width: 80%;
+    }
+    .myButton{
+        font-size: 1rem;
+    }
+
+    .fixedButton {
+
+        padding: 0.25rem 0.9rem;
+
+    }
+    
+}
+
+@media (min-width: 2560px){
+    .imageBox{
+        width: 570px;
+        height: 370px;
+    }
+
+    .fixedButton {
+        right: -6%; // ajustei
+        padding: 0.5rem 2rem;
+    }
+
+    .imageAdeus{
+        width: 2.7rem;
+        height: 2.7rem;
+    }
+    .myButton{
+        font-size: 2rem;
+    }
+
+    .text{
+        width: 80%;
+        font-size: 5rem;
+    }
+    
+}
+
+@media (max-height: 720px){
+    .imageBox{
+        width: 270px;
+        height: 160px;
     }
     .text{
-        font-size: 2rem;
-        color: $text;
-        font-weight: 800;
         width: 100%;
-        text-align: center;
+        font-size: 1.7rem;
     }
-    .container{
-        display: flex;
-        flex-direction: column;
-        width: 100%; 
+    .fixedButton {
+        right: -4%; 
     }
+
+    .buttonProjects{
+        width: 10rem;
+        height: 3.2rem;
+        margin-top: 2%;
+    }
+
 }
 
-@media (max-width: 1300px){
-    .container{
-        display: flex;
-        flex-direction: column;
-        width: 100%; 
-    }
- 
-}
+// @media (min-height: 1000px){
+//     .imageBox{
+//         width: 250px;
+//         height: 160px;
+//     }
+//     .text{
+//         width: 100%;
+//         font-size: 2rem;
+//     }
+//     .fixedButton {
+//         right: -6%; 
+//     }
+
+//     .buttonProjects{
+//         width: 10rem;
+//         height: 3.2rem;
+//         margin-top: 2%;
+//     }
+
+//     .container{
+//         width: 100%;
+//     }
 
 
+// }

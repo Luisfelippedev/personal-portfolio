@@ -1,7 +1,6 @@
 import Image from "next/image";
 import styles from "./styles.module.scss";
 import { Button } from "../Button";
-import tchauIcon from "../../../public/adeus.png";
 
 export const PresentationContainer = () => {
   return (
@@ -22,7 +21,7 @@ export const PresentationContainer = () => {
                 borderRadius: "inherit",
                 width: "100%",
                 height: "100%",
-                border: '4px solid white'
+                border: "3px solid white",
               }}
             >
               <Image
@@ -34,14 +33,17 @@ export const PresentationContainer = () => {
             </div>
           </div>
           <button className={styles.fixedButton}>
-            Meu Botão
-            <Image
-            src="/adeus.png"
-            alt="Descrição da imagem"
-            height={20}
-            width={20}
-            style={{marginLeft: 5}}
-          />
+            <p className={styles.myButton}>Meu Botão</p>
+            
+            <div className={styles.imageAdeus}>
+              <Image
+                src="/adeus.png"
+                alt="Descrição da imagem"
+                layout="fill"
+                objectFit="cover"
+                style={{ marginLeft: 5 }}
+              />
+            </div>
           </button>
         </div>
       </div>
@@ -53,9 +55,11 @@ export const PresentationContainer = () => {
       </div>
 
       <div className={styles.lastBox}>
-        <Button isIcon color="secondary" size="large">
-          Latest Shot
-        </Button>
+        <div className={styles.buttonProjects}>
+          <Button isIcon color="secondary">
+            Projetos
+          </Button>
+        </div>
       </div>
     </div>
   );

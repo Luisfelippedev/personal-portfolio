@@ -1,28 +1,30 @@
 import { ReactNode } from "react";
 import styles from "./styles.module.scss";
-import ArrowOutwardIcon from "@mui/icons-material/ArrowOutward";
+import SouthIcon from "@mui/icons-material/South";
 
 type Props = {
   children: ReactNode;
   color: "primary" | "secondary";
-  size: "small" | "medium" | "large";
   isIcon?: boolean;
 };
 
-export const Button = ({ children, color, size, isIcon }: Props) => {
+export const Button = ({ children, color, isIcon }: Props) => {
   return (
     <button
       style={{
-        width: '100%',
-        justifyContent: isIcon && size === "large" ? "space-around" : "center",
-        padding: isIcon && size === "large" ? "3% 10%" : "3% 9%",
+        width: "100%",
+        height: "100%",
+        justifyContent: "center",
+        padding: isIcon ? "3% 10%" : "3% 9%",
       }}
       className={
         color == "primary" ? styles.ButtonPrimary : styles.ButtonSecondary
       }
     >
-      {children}
-      {isIcon ? <ArrowOutwardIcon /> : null}
+      <div className={styles.contentButton}>
+        {children}
+        {isIcon ? <SouthIcon fontSize="small" /> : null}
+      </div>
     </button>
   );
 };
