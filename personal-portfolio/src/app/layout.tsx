@@ -1,9 +1,9 @@
 import type { Metadata } from "next";
-import { Playfair } from "next/font/google";
+import { Montserrat } from "next/font/google";
 import "./globals.scss";
 
-const playfair = Playfair({
-  weight: '800',
+const montserrat = Montserrat({
+  weight: '500',
   subsets: ['latin'],
 })
 
@@ -19,7 +19,7 @@ export default function RootLayout({
 }>) {
   return (
     <html lang="pt-br">
-      <body className={playfair.className}>{children}</body>
+      <body className={montserrat.className}>{children}</body>
     </html>
   );
 }

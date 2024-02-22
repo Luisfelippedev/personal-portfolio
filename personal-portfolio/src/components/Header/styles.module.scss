@@ -2,10 +2,11 @@
 
 
 .headerBackground{
-    height: 100vh;
+    min-height: 100vh;
     width: 100%;
     // background-color: $background-900;
-    background: linear-gradient(135deg, #f2f2f2, #d8d8d8);
+    background-image: $background-900;
+    background-blend-mode: $blend-mode;
    
     
 
@@ -15,28 +16,18 @@
 .HeaderContainer{
     display: flex;
     flex-direction: column;
-    height: 100%;
+    height: 100vh;
     width: 100%;
 }
 
-.firstSectionBackground{
-    display: flex;
-    background-color: white;
-    height: 75%;
-}
+
 
 .firstSection{
     display: flex;
     flex-direction: column;
     // background-color: $background-900;
-    background: linear-gradient(135deg, #f2f2f2, #d8d8d8);
-
-    
-    
-    
-    
-    
-    
+    background-image: $background-900;
+    background-blend-mode: $blend-mode;
     height: 100%;
     width: 100%;
     border-bottom-left-radius: 100px;
@@ -52,27 +43,50 @@
     justify-content: center;
     height: 100%;
     width: 100%;
-   margin-top: 3%;
+    margin-top: 3%;
 
+}
+
+.firstSectionBackground{
+    display: flex;
+    background-color: $background-200;
+    background-blend-mode: $blend-mode;
+    height: 75%;
 }
 
 .lastSection{
     display: flex;
-    height: 100%;
-    background-color: white;
+    height: auto;
+    background-color: $background-200;
+    background-blend-mode: $blend-mode;
     border-bottom-left-radius: 100px;
     border-bottom-right-radius: 100px;
-    border: 1px solid black;
     overflow: hidden;
     width: 100%;
-    padding: 10% 10%;
+    box-sizing: border-box;
+    justify-content: center;
     align-items: center;
+    flex: 1;
 }
 
 .carousel{
     width: 100%;
-    background-color: red;
+    height: auto;
+    padding: 2% 5%;
 
 
 }
 
+@media (max-width: 768px) {
+    .firstSection, .lastSection {
+        border-bottom-left-radius: 80px;
+        border-bottom-right-radius: 80px;
+    }
+}
+
+@media (max-width: 480px) {
+    .firstSection, .lastSection {
+        border-bottom-left-radius: 50px;
+        border-bottom-right-radius: 50px;
+    }
+}

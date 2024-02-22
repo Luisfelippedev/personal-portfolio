@@ -56,7 +56,7 @@
 }
 
 .text{
-    font-size: 2.4rem;
+    font-size: 2.8rem;
     color: $text;
     font-weight: 800;
     width: 100%;
@@ -83,7 +83,7 @@
     font-size: 1.3rem;
 }
 
-    @media (max-width: 700px) {
+    @media (max-width: 1000px) {
 
 
         .buttonText{
@@ -97,7 +97,7 @@
         }
 
         .text{
-            font-size: 2rem;
+            font-size: 2.6rem;
         }
 
         .container{
@@ -121,6 +121,9 @@
         
         
     }
+
+
+
 
 
     @media (min-width: 1440px){

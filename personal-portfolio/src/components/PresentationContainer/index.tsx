@@ -34,7 +34,7 @@ export const PresentationContainer = () => {
           </div>
           <button className={styles.fixedButton}>
             <p className={styles.myButton}>Luis Felipe</p>
-            
+
             <div className={styles.imageAdeus}>
               <Image
                 src="/adeus.png"
@@ -50,17 +50,15 @@ export const PresentationContainer = () => {
 
       <div className={styles.secondBox}>
         <p className={styles.text}>
-          Building digital products, brands, and experience.
+          Desenvolvimento de soluções em software, aplicações e interfaces de
+          usuário.
         </p>
       </div>
 
       <div className={styles.lastBox}>
         <div className={styles.buttonProjects}>
           <Button isIcon color="secondary">
-            <p className={styles.buttonText}>
-              Projetos
-            </p>
-            
+            <p className={styles.buttonText}>Projetos</p>
           </Button>
         </div>
       </div>
