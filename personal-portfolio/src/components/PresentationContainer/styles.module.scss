@@ -56,7 +56,7 @@
 }
 
 .text{
-    font-size: 2.8rem;
+    font-size: 2.2rem;
     color: $text;
     font-weight: 800;
     width: 100%;
@@ -97,11 +97,12 @@
         }
 
         .text{
-            font-size: 2.6rem;
+            font-size: 1.4rem;
+
         }
 
         .container{
-            width: 100%; 
+            width: 80%; 
         }
 
         .buttonProjects{
@@ -192,6 +193,10 @@
             width: 10rem;
             height: 3.2rem;
             margin-top: 2%;
+        }
+
+        .container{
+            width: 100%; 
         }
 
     }

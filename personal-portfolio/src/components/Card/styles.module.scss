@@ -19,3 +19,26 @@
     height: 80px;
     width: 80px;
 }
+
+@media (max-width: 670px){
+    .card p {
+        font-size: 0.9rem;
+    }
+    
+}
+
+@media (max-width: 490px){
+    .card p {
+        font-size: 0.7rem;
+        font-weight: 800;
+    }
+    
+}
+
+@media (max-width: 412px){
+    .card p {
+        font-size: 1rem;
+        font-weight: 800;
+    }
+    
+}

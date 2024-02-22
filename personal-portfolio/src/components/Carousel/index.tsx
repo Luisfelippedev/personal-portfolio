@@ -3,13 +3,9 @@ import React from "react";
 import Slider from "react-slick";
 import "slick-carousel/slick/slick.css";
 import "slick-carousel/slick/slick-theme.css";
-import styles from "./styles.module.scss";
 import { Card } from "../Card";
 
-
 export const Carousel = () => {
-
-
   const settings = {
     dots: false,
     infinite: true,
@@ -20,7 +16,7 @@ export const Carousel = () => {
     accessibility: false,
     arrows: false,
     autoplay: true,
-    autoplaySpeed: 3000,
+    autoplaySpeed: 2500,
     responsive: [
       {
         breakpoint: 1433,
@@ -55,10 +51,18 @@ export const Carousel = () => {
           slidesToScroll: 1,
         },
       },
+      {
+        breakpoint: 412,
+        settings: {
+          slidesToShow: 1,
+          slidesToScroll: 1,
+        },
+      },
     ],
   };
 
   return (
+    <div>
        <Slider {...settings}>
       <div>
         <Card type="userExperience" />
@@ -79,7 +83,7 @@ export const Carousel = () => {
         <Card type="api" />
       </div>
     </Slider>
-
+    </div>
    
   );
 };
