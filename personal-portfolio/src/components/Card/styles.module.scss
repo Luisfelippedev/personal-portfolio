@@ -1,0 +1,21 @@
+.card{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 5%;
+    flex-direction: row;
+    gap: 1%;
+}
+
+.card p {
+    text-align: center;
+    font-size: 1.3rem;
+    font-weight: 600;
+    flex: 1;
+
+}
+
+.imageContainer{
+    height: 80px;
+    width: 80px;
+}

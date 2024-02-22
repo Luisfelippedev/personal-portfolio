@@ -9,7 +9,23 @@ Button:hover{
 }
 
 .slick-list {margin: 0 -10px;}
-.slick-slide>div {padding: 0 10px;}
+.slick-slide>div {
+  padding: 0 10px;
+  display: grid;
+  place-items: center;
+  width: 80%;
+  margin: auto;
+
+  // height: 100vh;
+
+}
+
+@media(max-width: 700px){
+  .slick-slide>div {
+    width: 100%;
+   
+  }
+}
 
 
 
