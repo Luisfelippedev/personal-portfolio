@@ -2,6 +2,8 @@ import Image from "next/image";
 import styles from "./styles.module.scss";
 import { Button } from "../Button";
 
+import { Avatar } from "flowbite-react";
+
 export const PresentationContainer = () => {
   return (
     <div className={styles.container}>
@@ -30,10 +32,12 @@ export const PresentationContainer = () => {
                 layout="fill"
                 objectFit="cover"
               />
+
             </div>
+     
           </div>
           <button className={styles.fixedButton}>
-            <p className={styles.myButton}>Luis Felipe</p>
+            <p className={styles.myButton}>Bem vindo</p>
 
             <div className={styles.imageAdeus}>
               <Image
@@ -57,7 +61,7 @@ export const PresentationContainer = () => {
 
       <div className={styles.lastBox}>
         <div className={styles.buttonProjects}>
-          <Button isIcon color="secondary">
+          <Button color="secondary">
             <p className={styles.buttonText}>Projetos</p>
           </Button>
         </div>

@@ -1,3 +1,5 @@
+@import '../../themes/index.scss';
+
 .card{
     display: flex;
     justify-content: center;
@@ -12,7 +14,7 @@
     font-size: 1.3rem;
     font-weight: 600;
     flex: 1;
-
+    color: $text;
 }
 
 .imageContainer{
