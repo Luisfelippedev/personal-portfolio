@@ -12,15 +12,17 @@ export const AboutMe = () => {
             pointerEvents: "none",
             backgroundColor: "rgb(165 243 252 / var(--tw-bg-opacity))",
             color: "rgba(0, 0, 0, 0.822)",
+            height: 70,
+            width: 200,
           }}
         >
-          <p className={styles.textButton}>🧐 Sobre mim</p>
+          <p className={styles.textButton}>Sobre mim</p>
         </Button>
         <p className={styles.textName}>Luis Felipe</p>
         <ul>
           <li className={styles.textLi}>
             👨‍💻 Desenvolvendo interfaces de usuário e APIs com
-            Javascript/Typescript desde 2022
+            Javascript/Typescript desde 2021
           </li>
           <li className={styles.textLi}>
             🎓 Cursando Análise e Desenvolvimento de Sistemas 7/7
