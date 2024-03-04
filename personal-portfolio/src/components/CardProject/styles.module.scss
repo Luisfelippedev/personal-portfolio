@@ -1,0 +1,82 @@
+@import '../../themes/index.scss';
+
+.container{
+    display: flex;
+    flex-direction: column;
+    padding: 5%;
+    gap: 0.7rem;
+    background-color: #f5f5f5; /* Background cinza claro */
+    border-radius: 15px; /* Borda arredondada */
+    border: 1px solid #ccc; /* Borda cinza */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Sombra suave */
+}
+
+@mixin box{
+    display: flex;
+    align-items: center;
+    justify-content: start;
+    width: 100%;
+}
+
+
+.firstBox{
+    @include box;
+    flex-direction: column;
+    gap: 0.7rem;
+    .ballsBox{
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+        justify-content: start;
+        width: 100%;
+        @mixin ball {
+            width: 1rem;
+            height: 1rem;
+            border-radius: 50%;
+            margin-right: 10px;
+        }
+        
+        .redBall {
+            @include ball;
+            background-color: #FF5F57; /* Vermelho */
+        }
+        
+        .yellowBall {
+            @include ball;
+            background-color: #FFD32A; /* Amarelo */
+        }
+        
+        .greenBall {
+            @include ball;
+            background-color: #27AE60; /* Verde */
+        }
+    }
+
+    .textPrimary{
+        font-size: 1rem;
+        color: $text;
+        width: 100%;
+        font-weight: 600;
+        font-size: 1.2rem;
+        line-height: 1.75rem;
+    }
+
+    .textSecondary{
+        color: rgb(107, 114, 128, 1);
+    
+    }
+
+    
+}
+
+
+
+.secondBox{
+    @include box;
+    gap: 10px;
+}
+
+.lastBox{
+    @include box;
+    flex: 3;
+}

@@ -60,8 +60,7 @@ export const TimeLine = () => {
           <TimelineTime>2023</TimelineTime>
           <TimelineTitle>Bibliotecas e Projetos</TimelineTitle>
           <TimelineBody>
-            Conheçendo o grande poder das bibliotecas em JavaScript, e
-            desenvolvendo projetos pessoais de forma concisa.
+            Explorando o imenso potencial das bibliotecas em JavaScript e criando projetos pessoais de maneira eficiente.
           </TimelineBody>
         </TimelineContent>
       </TimelineItem>
