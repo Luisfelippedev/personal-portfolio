@@ -19,8 +19,11 @@
     justify-content: center;
     align-items: center;
     flex-direction: column;
-    
 
+    @media (max-width: 780px){
+        padding: 10%;
+    
+    }
 }
 
 .projectSection {
@@ -29,12 +32,23 @@
     background-color: white;
     border-top-left-radius: 100px;
     border-top-right-radius: 100px;
+    border-bottom-left-radius: 100px;
+    border-bottom-right-radius: 100px;
     padding: 3% 10%;
 
+    @media (max-width: 768px) {
+        border-top-left-radius: 80px;
+        border-top-right-radius: 80px;
+        border-bottom-left-radius: 80px;
+        border-bottom-right-radius: 80px;
+    }
+    
+    @media (max-width: 480px) {
+        border-top-left-radius: 50px;
+        border-top-right-radius: 50px;
+        border-bottom-left-radius: 80px;
+        border-bottom-right-radius: 80px;
+    }
   }
 
-@media (max-width: 780px){
-    .background{
-        padding: 10%;
-    }
-}
+
