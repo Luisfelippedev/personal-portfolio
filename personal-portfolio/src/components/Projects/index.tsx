@@ -21,17 +21,7 @@ const Projects = () => {
       </div>
 
       <div className={styles.cardsContainer}>
-        <CardProject />
-        <CardProject />
-        <CardProject />
-        <CardProject />
-        <CardProject />
-        <CardProject />
-        <CardProject />
-        <CardProject />
-        <CardProject />
-        <CardProject />
-        <CardProject />
+        <CardProject project="devblog" />
       </div>
     </div>
   );
