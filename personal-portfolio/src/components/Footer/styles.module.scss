@@ -1,0 +1,52 @@
+@import '../../themes/index.scss';
+
+.container{
+    border-top: 1px solid rgb(221, 221, 221);
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 2% 0 2% 0;
+}
+
+.socialBox{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 18px;
+}
+
+.text{
+    color: $text;
+    font-weight: 400;
+}
+
+.textRights{
+    color: $text;
+    font-weight: 400;
+}
+
+
+@media (max-width: 540px) {
+    // Esconder os botões quando a largura da tela for igual ou inferior a 600px
+    .textRights{
+        font-size: 0.7rem;
+        inline-size: 100px;
+        overflow-wrap: break-word;
+    }
+    
+    .text{
+        font-size: 0.8rem;
+    }
+}
+
+@media (min-width: 2560px){
+
+    .textRights{
+        font-size: 2rem;
+    }
+    
+    .text{
+        font-size: 2rem;
+    }
+
+}

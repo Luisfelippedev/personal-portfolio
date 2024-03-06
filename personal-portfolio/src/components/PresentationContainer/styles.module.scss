@@ -91,12 +91,16 @@
     }
 }
 
-.text {
-    font-size: 2.2rem;
-    color: $text;
+.text { 
+    font-size: 2.5rem;
+    background: linear-gradient(96.0843deg, rgb(12, 12, 12) 0%, rgba(12, 12, 12, 0.55) 100%);
+  -webkit-background-clip: text;
+  background-clip: text;
+  color: transparent;
     font-weight: 800;
     width: 100%;
     text-align: center;
+    
 
     @media (max-width: 1000px) {
         font-size: 1.3rem;

@@ -1,22 +1,37 @@
 "use client";
-import React from "react";
+import React, { useEffect, useRef } from "react";
 import Slider from "react-slick";
 import "slick-carousel/slick/slick.css";
 import "slick-carousel/slick/slick-theme.css";
 import { Card } from "../Card";
 
 export const Carousel = () => {
+
+  const sliderRef:any = useRef(null);
+
+  useEffect(() => {
+    const interval = setInterval(() => {
+      // Mude o slide manualmente para o próximo
+
+        sliderRef.current?.slickNext();
+   
+      
+    }, 300); // Intervalo em milissegundos entre cada transição
+
+    return () => clearInterval(interval); // Limpe o intervalo ao desmontar o componente
+  }, []);
+  
   const settings = {
     dots: false,
     infinite: true,
-    speed: 300,
+    speed: 2300,
     slidesToShow: 4,
-    slidesToScroll: 1,
     className: "center",
-    accessibility: false,
+    accessibility: true,
     arrows: false,
     autoplay: true,
-    autoplaySpeed: 2500,
+    autoplaySpeed: 3000,
+    cssEase: "linear",
     responsive: [
       {
         breakpoint: 1433,
@@ -42,7 +57,7 @@ export const Carousel = () => {
           slidesToShow: 2,
           slidesToScroll: 1,
           initialSlide: 2,
-        },
+        },    slidesToScroll: 1,
       },
       {
         breakpoint: 560,
@@ -63,7 +78,7 @@ export const Carousel = () => {
 
   return (
     <div>
-       <Slider {...settings}>
+       <Slider ref={sliderRef} {...settings}>
       <div>
         <Card type="userExperience" />
       </div>
