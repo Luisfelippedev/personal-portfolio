@@ -27,7 +27,7 @@ export const PresentationContainer = () => {
               }}
             >
               <Image
-                src="/eu.jpeg"
+                src="/eu.jpg"
                 alt="Descrição da imagem"
                 layout="fill"
                 objectFit="cover"

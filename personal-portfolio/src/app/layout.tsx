@@ -1,10 +1,10 @@
 import type { Metadata } from "next";
-import { Montserrat } from "next/font/google";
+import { Inter } from "next/font/google";
 import "./globals.scss";
 
 import { ThemeModeScript } from "flowbite-react";
 
-const montserrat = Montserrat({
+const montserrat = Inter({
   weight: "500",
   subsets: ["latin"],
 });
