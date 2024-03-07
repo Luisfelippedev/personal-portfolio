@@ -6,31 +6,32 @@ import "slick-carousel/slick/slick-theme.css";
 import { Card } from "../Card";
 
 export const Carousel = () => {
+  // const sliderRef:any = useRef(null);
 
-  const sliderRef:any = useRef(null);
+  // useEffect(() => {
+  //   const interval = setInterval(() => {
+  //     // Mude o slide manualmente para o próximo
 
-  useEffect(() => {
-    const interval = setInterval(() => {
-      // Mude o slide manualmente para o próximo
+  //       sliderRef.current?.slickNext();
 
-        sliderRef.current?.slickNext();
-   
-      
-    }, 300); // Intervalo em milissegundos entre cada transição
+  //   }, 300); // Intervalo em milissegundos entre cada transição
 
-    return () => clearInterval(interval); // Limpe o intervalo ao desmontar o componente
-  }, []);
-  
+  //   return () => clearInterval(interval); // Limpe o intervalo ao desmontar o componente
+  // }, []);
+
   const settings = {
+    draggable: false,
+    pauseOnHover: false,
+    swipe: false,
     dots: false,
     infinite: true,
-    speed: 2300,
+    speed: 2000,
     slidesToShow: 4,
     className: "center",
-    accessibility: true,
+    accessibility: false,
     arrows: false,
     autoplay: true,
-    autoplaySpeed: 3000,
+    autoplaySpeed: 0,
     cssEase: "linear",
     responsive: [
       {
@@ -38,8 +39,6 @@ export const Carousel = () => {
         settings: {
           slidesToShow: 3,
           slidesToScroll: 1,
-          infinite: true,
-
         },
       },
       {
@@ -47,8 +46,6 @@ export const Carousel = () => {
         settings: {
           slidesToShow: 3,
           slidesToScroll: 1,
-          infinite: true,
-
         },
       },
       {
@@ -57,7 +54,8 @@ export const Carousel = () => {
           slidesToShow: 2,
           slidesToScroll: 1,
           initialSlide: 2,
-        },    slidesToScroll: 1,
+        },
+        slidesToScroll: 1,
       },
       {
         breakpoint: 560,
@@ -78,27 +76,27 @@ export const Carousel = () => {
 
   return (
     <div>
-       <Slider ref={sliderRef} {...settings}>
-      <div>
-        <Card type="userExperience" />
-      </div>
-      <div>
-        <Card type="devWeb" />
-      </div>
-      <div>
-        <Card type="devMobile" />
-      </div>
-      <div>
-        <Card type="responsiveLayout" />
-      </div>
-      <div>
-        <Card type="innovation" />
-      </div>
-      <div>
-        <Card type="api" />
-      </div>
-    </Slider>
+      {/* <Slider ref={sliderRef} {...settings}> */}
+      <Slider {...settings}>
+        <div>
+          <Card type="userExperience" />
+        </div>
+        <div>
+          <Card type="devWeb" />
+        </div>
+        <div>
+          <Card type="devMobile" />
+        </div>
+        <div>
+          <Card type="responsiveLayout" />
+        </div>
+        <div>
+          <Card type="innovation" />
+        </div>
+        <div>
+          <Card type="api" />
+        </div>
+      </Slider>
     </div>
-   
   );
 };

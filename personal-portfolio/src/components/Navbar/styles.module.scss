@@ -46,7 +46,20 @@
     width: 20px;
 }
 
+.textLink{
+    color: $text;
+    font-weight: 400;
+}
 
+.textLink:hover{
+    cursor: pointer;
+    text-decoration: underline;
+}
+
+.buttonCV:hover{
+    cursor: pointer;
+    text-decoration: underline;
+}
 
 
 @media (max-width: 540px) {
