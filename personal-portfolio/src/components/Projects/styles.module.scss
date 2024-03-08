@@ -9,7 +9,7 @@
     justify-content: start;
     align-items: center;
     background-color: white;
-
+    
 }
 
 .buttonBox{
@@ -17,6 +17,10 @@
     align-items: center;
     justify-content: start;
     width: 100%;
+
+    @media(max-width:600px){
+        margin-top: 2rem;
+    }
 }
 
 
@@ -39,11 +43,15 @@
 }
 
 .textButton{
-    color: $text;
-    font-weight: 800;
-    font-size: 1.5rem;
+    font-weight: 600;
+    font-size: 1.2rem;
     color: white;
     @media (max-width: 768px) {
         font-size: 1.2rem;
     }
+}
+.iconClipe{
+    width: 1.5rem;
+    color: white;
+    margin-right: 0.5rem;
 }

@@ -1,6 +1,7 @@
 import Image from "next/image";
 import styles from "./styles.module.scss";
 import { Button } from "../Button";
+import Link from 'next/link';
 
 import { Avatar } from "flowbite-react";
 
@@ -60,11 +61,11 @@ export const PresentationContainer = () => {
       </div>
 
       <div className={styles.lastBox}>
-        <div className={styles.buttonProjects}>
+        <Link href={"/#section-project"} className={styles.buttonProjects}>
           <Button color="secondary">
             <p className={styles.buttonText}>Projetos</p>
           </Button>
-        </div>
+        </Link>
       </div>
     </div>
   );

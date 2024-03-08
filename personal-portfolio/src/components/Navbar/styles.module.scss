@@ -37,7 +37,7 @@
 
 .buttonCV{
     display: flex;
-    width: 7rem;
+    width: 6rem;
     height: 2rem;
     
 }
@@ -62,10 +62,14 @@
 }
 
 
-@media (max-width: 540px) {
+@media (max-width: 630px) {
     // Esconder os botões quando a largura da tela for igual ou inferior a 600px
 
     .text{
+        color: $text;
+        font-size: 0.8rem;
+    }
+    .textLink{
         color: $text;
         font-size: 0.8rem;
     }
@@ -87,8 +91,8 @@
     }
 
     .buttonCV{
-        width: 24%;
-        height: 100%;
+        width: 3.5rem;
+        height: 1.5rem;
 
     }
     .navbar{
@@ -108,6 +112,9 @@
 
 @media (min-width: 2560px){
     .text{
+        font-size: 2rem;
+    }
+    .textLink{
         font-size: 2rem;
     }
 

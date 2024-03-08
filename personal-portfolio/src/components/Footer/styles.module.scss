@@ -20,6 +20,16 @@
     font-weight: 400;
 }
 
+.textLink{
+    color: $text;
+    font-weight: 400;
+}
+
+.textLink:hover{
+    cursor: pointer;
+    text-decoration: underline;
+}
+
 .textRights{
     color: $text;
     font-weight: 400;
@@ -37,6 +47,10 @@
     .text{
         font-size: 0.8rem;
     }
+
+    .textLink{
+        font-size: 0.8rem;
+    }
 }
 
 @media (min-width: 2560px){
@@ -49,4 +63,7 @@
         font-size: 2rem;
     }
 
+    .textLink{
+        font-size: 0.8rem;
+    }
 }

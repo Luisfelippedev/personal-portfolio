@@ -9,6 +9,12 @@
     border-radius: 15px; /* Borda arredondada */
     border: 1px solid #ccc; /* Borda cinza */
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Sombra suave */
+    cursor: pointer;
+    transition: transform 0.2s ease-in-out; /* Adiciona uma transição suave no efeito de transformação */
+}
+
+.container:hover {
+    transform: scale(1.05); /* Aumenta a escala em 5% ao passar o mouse */
 }
 
 @mixin box{
@@ -63,7 +69,7 @@
 
     .textSecondary{
         color: rgb(107, 114, 128, 1);
-    
+        min-height: 8rem;
     }
 
     
@@ -79,4 +85,13 @@
 .lastBox{
     @include box;
     flex: 3;
+}
+
+.githubIcon{
+    cursor: pointer;
+    transition: transform 0.2s ease-in-out; /* Adiciona uma transição suave no efeito de transformação */
+}
+
+.githubIcon:hover {
+    transform: scale(1.5); /* Aumenta a escala em 5% ao passar o mouse */
 }
