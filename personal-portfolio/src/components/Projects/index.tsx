@@ -6,22 +6,24 @@ const Projects = () => {
   return (
     <div className={styles.container}>
       <div className={styles.buttonBox}>
-      <Button
-  style={{
-    cursor: "auto",
-    pointerEvents: "none",
-    backgroundColor: "rgb(33, 33, 33)", // Tonalidade de preto
-    color: "#fff", // Cor do texto em branco para manter o contraste
-    height: 70,
-    width: 200,
-  }}
->
+        <Button
+          style={{
+            cursor: "auto",
+            pointerEvents: "none",
+            backgroundColor: "rgba(0, 0, 0, 0.822)",
+            height: 50,
+            width: 150,
+          }}
+        >
+          <img className={styles.iconClipe} src="/clipe.png" alt="icon" />
           <p className={styles.textButton}>Projetos</p>
         </Button>
       </div>
 
       <div className={styles.cardsContainer}>
         <CardProject project="devblog" />
+        <CardProject project="cacheredis" />
+        <CardProject project="spatialdata" />
       </div>
     </div>
   );

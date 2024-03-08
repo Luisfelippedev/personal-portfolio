@@ -13,7 +13,7 @@ export default function Home() {
       <div className={styles.background}>
         <AboutMe />
       </div>
-      <div className={styles.projectSection}>
+      <div id="section-project" className={styles.projectSection}>
         <Projects />
       </div>
       <TellMeSection />

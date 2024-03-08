@@ -11,27 +11,31 @@ export const AboutMe = () => {
             cursor: "auto",
             pointerEvents: "none",
             backgroundColor: "rgb(165 243 252 / var(--tw-bg-opacity))",
-            color: "rgba(0, 0, 0, 0.822)",
-            height: 70,
-            width: 200,
+            height: 50,
+            width: 168,
           }}
         >
+          <img className={styles.iconInfo} src="/info.png" alt="icon" />
           <p className={styles.textButton}>Sobre mim</p>
         </Button>
-        <p className={styles.textName}>Luis Felipe</p>
-        <ul>
+        <p className={styles.textName}>Luis Felippe</p>
+        <ul style={{display:'flex', flexDirection: 'column'}}>
           <li className={styles.textLi}>
-            👨‍💻 Desenvolvendo interfaces de usuário e APIs com
+            <img src="/seta-direita.png" alt="icon" />
+            Desenvolvendo interfaces de usuário e APIs com
             Javascript/Typescript desde 2021
           </li>
           <li className={styles.textLi}>
-            🎓 Cursando Análise e Desenvolvimento de Sistemas 7/7
+          <img src="/seta-direita.png" alt="icon" />
+            Cursando Análise e Desenvolvimento de Sistemas 7/7
           </li>
           <li className={styles.textLi}>
-            💡 Interesse em desenvolvimento full-stack
+          <img src="/seta-direita.png" alt="icon" />
+            Interesse em desenvolvimento full-stack
           </li>
           <li className={styles.textLi}>
-            🚀 Buscando uma oportunidade para atuar como desenvolvedor
+          <img src="/seta-direita.png" alt="icon" />
+            Buscando uma oportunidade para atuar como desenvolvedor
           </li>
         </ul>
       </div>
