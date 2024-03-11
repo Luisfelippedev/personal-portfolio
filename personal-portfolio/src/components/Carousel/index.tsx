@@ -17,7 +17,6 @@ export const Carousel = () => {
     arrows: false,
     autoplay: true,
     autoplaySpeed: 0,
-    cssEase: "linear",
     responsive: [
       {
         breakpoint: 1433,
@@ -39,6 +38,7 @@ export const Carousel = () => {
           slidesToShow: 2,
           slidesToScroll: 1,
           initialSlide: 2,
+          speed: 1700,
         },
         slidesToScroll: 1,
       },
@@ -47,6 +47,7 @@ export const Carousel = () => {
         settings: {
           slidesToShow: 2,
           slidesToScroll: 1,
+          speed: 1700,
         },
       },
       {
@@ -54,6 +55,7 @@ export const Carousel = () => {
         settings: {
           slidesToShow: 1,
           slidesToScroll: 1,
+          speed: 1500,
         },
       },
     ],
