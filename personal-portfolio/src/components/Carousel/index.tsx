@@ -10,12 +10,12 @@ export const Carousel = () => {
     draggable: false,
     pauseOnHover: false,
     swipe: false,
-    // infinite: true,
+    infinite: true,
     speed: 2000,
     slidesToShow: 4,
     accessibility: true,
     arrows: false,
-    // autoplay: true,
+    autoplay: true,
     autoplaySpeed: 0,
     responsive: [
       {
@@ -62,27 +62,18 @@ export const Carousel = () => {
   };
 
   return (
-    <div>
-      <Slider {...settings}>
-        <div>
-          <Card type="userExperience" />
-        </div>
-        <div>
-          <Card type="devWeb" />
-        </div>
-        <div>
-          <Card type="devMobile" />
-        </div>
-        <div>
-          <Card type="responsiveLayout" />
-        </div>
-        <div>
-          <Card type="innovation" />
-        </div>
-        <div>
-          <Card type="api" />
-        </div>
-      </Slider>
-    </div>
+    <Slider {...settings}>
+      <Card type="userExperience" />
+
+      <Card type="devWeb" />
+
+      <Card type="devMobile" />
+
+      <Card type="responsiveLayout" />
+
+      <Card type="innovation" />
+
+      <Card type="api" />
+    </Slider>
   );
 };
