@@ -10,12 +10,12 @@ export const Carousel = () => {
     draggable: false,
     pauseOnHover: false,
     swipe: false,
-    infinite: true,
+    // infinite: true,
     speed: 2000,
     slidesToShow: 4,
     accessibility: true,
     arrows: false,
-    autoplay: true,
+    // autoplay: true,
     autoplaySpeed: 0,
     responsive: [
       {
