@@ -28,8 +28,8 @@ const CardProject = ({ project }: { project: ProjectType }) => {
       name: "DevBlog",
       description:
         "Um blog que viabiliza aos usuários a criação de contas, efetuar o login e realizar postagens para promover a interação entre todos os participantes da plataforma.",
-      linkGitHub: "https://github.com/Luisffelipe/devblog-mongodb",
-      linkDeploy: "https://github.com/Luisffelipe/devblog-mongodb",
+      linkGitHub: "https://github.com/Luisfelippedev/devblog-mongodb",
+      linkDeploy: "https://github.com/Luisfelippedev/devblog-mongodb",
       icons: [
         <IoLogoNodejs size={25} key="node" />,
         <SiExpress size={25} key="express" />,
@@ -42,8 +42,8 @@ const CardProject = ({ project }: { project: ProjectType }) => {
       name: "Cache-com-redis",
       description:
         "API REST com operações CRUD. Visando aprimorar a compreensão prática de como construir uma aplicação mais eficiente para os usuários utilizando cache.",
-      linkGitHub: "https://github.com/Luisffelipe/cache-com-redis",
-      linkDeploy: "https://github.com/Luisffelipe/cache-com-redis",
+      linkGitHub: "https://github.com/Luisfelippedev/cache-com-redis",
+      linkDeploy: "https://github.com/Luisfelippedev/cache-com-redis",
       icons: [
         <IoLogoNodejs size={25} key="node" />,
         <SiExpress size={25} key="express" />,
@@ -56,8 +56,8 @@ const CardProject = ({ project }: { project: ProjectType }) => {
       name: "Dados-espaciais",
       description:
         "Mapa global com a capacidade de adicionar marcadores, utilizando um banco de dados local e realizando uma abstração da API do Google Maps.",
-      linkGitHub: "https://github.com/Luisffelipe/using-spatial-data",
-      linkDeploy: "https://github.com/Luisffelipe/using-spatial-data",
+      linkGitHub: "https://github.com/Luisfelippedev/using-spatial-data",
+      linkDeploy: "https://github.com/Luisfelippedev/using-spatial-data",
       icons: [
         <IoLogoNodejs size={25} key="node" />,
         <SiExpress size={25} key="express" />,
