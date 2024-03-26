@@ -7,58 +7,55 @@ import { Card } from "../Card";
 
 export const Carousel = () => {
   const settings = {
-    firstMobile: true,
-    mobileFirst: true,
     initialSlide: 0,
     draggable: false,
     pauseOnHover: false,
     swipe: false,
     infinite: true,
     speed: 2000,
-    slidesToShow: 4,
+    slidesToShow: 1, // Definido como 1 por padrão para dispositivos móveis
     accessibility: true,
     arrows: false,
     autoplay: true,
     autoplaySpeed: 0,
     responsive: [
       {
-        breakpoint: 1433,
+        breakpoint: 412, // Breakpoint para dispositivos móveis menores
         settings: {
-          slidesToShow: 3,
+          slidesToShow: 1,
           slidesToScroll: 1,
+          speed: 1500,
         },
       },
       {
-        breakpoint: 1024,
+        breakpoint: 560, // Breakpoint para dispositivos móveis médios
         settings: {
-          slidesToShow: 3,
+          slidesToShow: 2,
           slidesToScroll: 1,
+          speed: 1700,
         },
       },
       {
-        breakpoint: 918,
+        breakpoint: 918, // Breakpoint para tablets e dispositivos móveis maiores
         settings: {
           slidesToShow: 2,
           slidesToScroll: 1,
           initialSlide: 2,
           speed: 1700,
         },
-        slidesToScroll: 1,
       },
       {
-        breakpoint: 560,
+        breakpoint: 1024, // Breakpoint para tablets e dispositivos maiores
         settings: {
-          slidesToShow: 2,
+          slidesToShow: 3,
           slidesToScroll: 1,
-          speed: 1700,
         },
       },
       {
-        breakpoint: 412,
+        breakpoint: 2000, // Breakpoint para desktops e dispositivos maiores
         settings: {
-          slidesToShow: 1,
+          slidesToShow: 3,
           slidesToScroll: 1,
-          speed: 1500,
         },
       },
     ],
