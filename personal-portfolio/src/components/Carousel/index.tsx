@@ -67,7 +67,7 @@ export const Carousel = () => {
   return (
     <div className="slider-container">
       <Slider {...settings}>
-        {/* <Card type="userExperience" />
+        <Card type="userExperience" />
 
         <Card type="devWeb" />
 
@@ -77,25 +77,7 @@ export const Carousel = () => {
 
         <Card type="innovation" />
 
-        <Card type="api" /> */}
-        <div style={{ display: "flex" }}>
-          <p>asdasdasd</p>
-        </div>
-        <div style={{ display: "flex" }}>
-          <p>asdasdasd</p>
-        </div>
-        <div style={{ display: "flex" }}>
-          <p>asdasdasd</p>
-        </div>
-        <div style={{ display: "flex" }}>
-          <p>asdasdasd</p>
-        </div>
-        <div style={{ display: "flex" }}>
-          <p>asdasdasd</p>
-        </div>
-        <div style={{ display: "flex" }}>
-          <p>asdasdasd</p>
-        </div>
+        <Card type="api" />
       </Slider>
     </div>
   );
