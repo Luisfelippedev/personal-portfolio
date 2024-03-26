@@ -7,6 +7,8 @@ import { Card } from "../Card";
 
 export const Carousel = () => {
   const settings = {
+    firstMobile: true,
+    mobileFirst: true,
     initialSlide: 0,
     draggable: false,
     pauseOnHover: false,
@@ -76,12 +78,24 @@ export const Carousel = () => {
         <Card type="innovation" />
 
         <Card type="api" /> */}
-        <div style={{display: 'flex'}}><p>asdasdasd</p></div>
-        <div style={{display: 'flex'}}><p>asdasdasd</p></div>
-        <div style={{display: 'flex'}}><p>asdasdasd</p></div>
-        <div style={{display: 'flex'}}><p>asdasdasd</p></div>
-        <div style={{display: 'flex'}}><p>asdasdasd</p></div>
-        <div style={{display: 'flex'}}><p>asdasdasd</p></div>
+        <div style={{ display: "flex" }}>
+          <p>asdasdasd</p>
+        </div>
+        <div style={{ display: "flex" }}>
+          <p>asdasdasd</p>
+        </div>
+        <div style={{ display: "flex" }}>
+          <p>asdasdasd</p>
+        </div>
+        <div style={{ display: "flex" }}>
+          <p>asdasdasd</p>
+        </div>
+        <div style={{ display: "flex" }}>
+          <p>asdasdasd</p>
+        </div>
+        <div style={{ display: "flex" }}>
+          <p>asdasdasd</p>
+        </div>
       </Slider>
     </div>
   );
