@@ -7,6 +7,7 @@ import { Card } from "../Card";
 
 export const Carousel = () => {
   const settings = {
+    initialSlide: 0,
     draggable: false,
     pauseOnHover: false,
     swipe: false,
@@ -62,18 +63,20 @@ export const Carousel = () => {
   };
 
   return (
-    <Slider {...settings}>
-      <Card type="userExperience" />
+    <div className="slider-container">
+      <Slider {...settings}>
+        <Card type="userExperience" />
 
-      <Card type="devWeb" />
+        <Card type="devWeb" />
 
-      <Card type="devMobile" />
+        <Card type="devMobile" />
 
-      <Card type="responsiveLayout" />
+        <Card type="responsiveLayout" />
 
-      <Card type="innovation" />
+        <Card type="innovation" />
 
-      <Card type="api" />
-    </Slider>
+        <Card type="api" />
+      </Slider>
+    </div>
   );
 };

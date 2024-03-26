@@ -39,13 +39,15 @@ export const Navbar = () => {
     <div className={styles.navbar}>
       <div className={styles.firstBox}>
         <div className={`${styles.emailIcon} ${isCopied ? styles.copied : ""}`}>
-          <a
-            style={{ cursor: "pointer", whiteSpace: "nowrap" }}
-            onClick={handleCopyClick}
-            className={styles.text}
-          >
-            {isCopied ? "E-mail Copiado!" : "felippe.luisdev@gmail.com"}
-          </a>
+          <div onClick={handleCopyClick}>
+            <a
+              style={{ cursor: "pointer", whiteSpace: "nowrap" }}
+              className={styles.text}
+            >
+              {isCopied ? "E-mail Copiado!" : "felippe.luisdev@gmail.com"}
+            </a>
+          </div>
+
           <div
             style={{ cursor: "pointer" }}
             className={styles.copyIcon}
@@ -60,11 +62,12 @@ export const Navbar = () => {
         >
           <div className={styles.buttonCV}>
             <Button color="primary">
-              <a className={styles.textCV}>CV</a>
+              CV
             </Button>
           </div>
         </a>
       </div>
+
       <div className={styles.lastBox}>
         <a
           href="https://www.linkedin.com/in/luis-felippe-67b033210/"
