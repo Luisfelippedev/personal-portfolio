@@ -71,13 +71,25 @@ const CardProject = ({ project }: { project: ProjectType }) => {
   const { name, description, linkGitHub, linkDeploy, icons } =
     projectDetails[project];
 
+  const handleGithubClick = () => {
+    window.location.href = linkDeploy;
+  };
+
   return (
     <div className={styles.container}>
-      <Link href={linkDeploy}>
+      <Link target="blank" href={linkDeploy}>
         <div className={styles.link}>
           <div className={styles.firstBox}>
             <div className={styles.ballsBox}>
-              <FaGithub size={35} />
+              <div style={{ display: "flex", flexDirection: "row" }}>
+                <div className={styles.redBall} />
+
+                <div className={styles.yellowBall} />
+                <div className={styles.greenBall} />
+              </div>
+              <div className={styles.githubIcon}>
+                <FaGithub size={35} />
+              </div>
             </div>
             <p className={styles.textPrimary}>{name}</p>
             <p className={styles.textSecondary}>{description}</p>
