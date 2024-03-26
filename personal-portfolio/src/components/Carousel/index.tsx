@@ -13,14 +13,14 @@ export const Carousel = () => {
     swipe: false,
     infinite: true,
     speed: 2000,
-    slidesToShow: 1, // Definido como 1 por padrão para dispositivos móveis
+    slidesToShow: 4, // Definido como 1 por padrão para dispositivos móveis
     accessibility: true,
     arrows: false,
     autoplay: true,
     autoplaySpeed: 0,
     responsive: [
       {
-        breakpoint: 412, // Breakpoint para dispositivos móveis menores
+        breakpoint: 1, // Breakpoint para dispositivos móveis menores
         settings: {
           slidesToShow: 1,
           slidesToScroll: 1,
@@ -52,7 +52,7 @@ export const Carousel = () => {
         },
       },
       {
-        breakpoint: 2000, // Breakpoint para desktops e dispositivos maiores
+        breakpoint: 1433, // Breakpoint para desktops e dispositivos maiores
         settings: {
           slidesToShow: 3,
           slidesToScroll: 1,
