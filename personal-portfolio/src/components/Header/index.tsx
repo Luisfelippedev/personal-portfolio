@@ -8,20 +8,18 @@ export const Header = () => {
     <div className={styles.headerBackground}>
       <div className={styles.HeaderContainer}>
         <div className={styles.firstSectionBackground}>
-           <div className={styles.firstSection}>
+          <div className={styles.firstSection}>
             <Navbar />
             <div className={styles.presentationContainer}>
               <PresentationContainer />
             </div>
-            
           </div>
         </div>
-       
+
         <div className={styles.lastSection}>
           <div className={styles.carousel}>
-              <Carousel />
+            <Carousel />
           </div>
-          
         </div>
       </div>
     </div>
