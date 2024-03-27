@@ -36,7 +36,7 @@
     border-bottom-right-radius: 100px;
     padding: 3% 10%;
     box-shadow: 
-    inset 0px 10px 30px -15px rgba(0, 0, 0, 0.2), /* Sombra na borda superior interna com mais intensidade */
+    0px -10px 30px -15px rgba(0, 0, 0, 0.2), /* Sombra na borda superior interna com mais intensidade */
     inset 0px -10px 20px rgba(0, 0, 0, 0.1); /* Sombra na borda inferior interna */
 
     @media (max-width: 768px) {
