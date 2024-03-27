@@ -1,6 +1,10 @@
+"use client";
+
 import styles from "./styles.module.scss";
 import CardProject from "../CardProject";
 import { Button } from "flowbite-react";
+
+import { motion } from "framer-motion";
 
 const Projects = () => {
   return (
@@ -21,9 +25,27 @@ const Projects = () => {
       </div>
 
       <div className={styles.cardsContainer}>
-        <CardProject project="devblog" />
-        <CardProject project="cacheredis" />
-        <CardProject project="spatialdata" />
+        <motion.div
+          initial={{ opacity: 0, y: 30 }}
+          whileInView={{ opacity: 1, y: 0 }}
+          transition={{ duration: 0.3, ease: "easeOut" }}
+        >
+          <CardProject project="devblog" />
+        </motion.div>
+        <motion.div
+          initial={{ opacity: 0, y: 30 }}
+          whileInView={{ opacity: 1, y: 0 }}
+          transition={{ duration: 0.3, delay: 0.2, ease: "easeOut" }}
+        >
+          <CardProject project="cacheredis" />
+        </motion.div>
+        <motion.div
+          initial={{ opacity: 0, y: 30 }}
+          whileInView={{ opacity: 1, y: 0 }}
+          transition={{ duration: 0.3, delay: 0.4, ease: "easeOut" }}
+        >
+          <CardProject project="spatialdata" />
+        </motion.div>
       </div>
     </div>
   );

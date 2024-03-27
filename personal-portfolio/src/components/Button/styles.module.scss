@@ -25,7 +25,7 @@
 .ButtonSecondary {
     @include genericButton; /* Selecione o estilo genérico do botão */
     background-color: white; /* Cor de fundo */
-    color: #352d27; /* Cor do texto */
+    color: $text; /* Cor do texto */
     border: 2px solid transparent; /* Borda transparente para transição suave */
     transition: background-color 0.3s, border-color 0.3s, transform 0.3s; /* Transições suaves */
 

@@ -4,6 +4,8 @@ import { useState } from "react";
 import { Button } from "../Button";
 import styles from "./styles.module.scss";
 import ContentCopyIcon from "@mui/icons-material/ContentCopy";
+import Link from "next/link";
+import { motion } from "framer-motion";
 
 export const Navbar = () => {
   const [isCopied, setIsCopied] = useState(false);
@@ -36,7 +38,12 @@ export const Navbar = () => {
   };
 
   return (
-    <div className={styles.navbar}>
+    <motion.div
+      initial={{ y: -50, opacity: 0 }}
+      whileInView={{ y: 0, opacity: 1 }}
+      transition={{ duration: 0.2, ease: "easeOut" }}
+      className={styles.navbar}
+    >
       <div className={styles.firstBox}>
         <div className={`${styles.emailIcon} ${isCopied ? styles.copied : ""}`}>
           <div onClick={handleCopyClick}>
@@ -56,16 +63,11 @@ export const Navbar = () => {
             <ContentCopyIcon style={{ height: "100%" }} />
           </div>
         </div>
-        <a
-          href="https://drive.google.com/file/d/1kn8INOQ3gJbhCER8QDI9FGw8gei0yBCS/view?usp=sharing"
-          target="_blank"
-        >
+        <Link href="Profile.pdf" target="_blank">
           <div className={styles.buttonCV}>
-            <Button color="primary">
-              CV
-            </Button>
+            <Button color="primary">CV</Button>
           </div>
-        </a>
+        </Link>
       </div>
 
       <div className={styles.lastBox}>
@@ -78,13 +80,13 @@ export const Navbar = () => {
         </a>
         <p className={styles.text}>/</p>
         <a
-          href="https://github.com/Luisffelipe"
+          href="https://github.com/Luisfelippedev"
           target="_blank"
           className={styles.textLink}
         >
           GitHub
         </a>
       </div>
-    </div>
+    </motion.div>
   );
 };

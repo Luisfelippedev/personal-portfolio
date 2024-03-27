@@ -1,16 +1,23 @@
+"use client";
+
 import styles from "./styles.module.scss";
 import { PiHandshakeThin } from "react-icons/pi";
 import { Button } from "../Button";
 import { MdOutlineEmail } from "react-icons/md";
 import { CiLinkedin } from "react-icons/ci";
+import { motion } from "framer-motion";
 
 const TellMeSection = () => {
   return (
     <div className={styles.container}>
       <div className={styles.tellMeSection}>
-        <div className={styles.circleContainer}>
+        <motion.div
+          whileInView={{ rotateY: 360 }} // Animação de rotação em torno do eixo Y
+          transition={{ duration: 0.7, ease: "linear" }}
+          className={styles.circleContainer}
+        >
           <PiHandshakeThin size="50%" />
-        </div>
+        </motion.div>
         <p className={styles.text}>Entre em contato comigo!</p>
         <div className={styles.buttonsContainer}>
           <a
@@ -20,11 +27,7 @@ const TellMeSection = () => {
             className={styles.buttonEmail}
           >
             <Button color="secondary">
-              <MdOutlineEmail
-                style={{ marginRight: "6%" }}
-                size="20%"
-                color="white"
-              />
+              <MdOutlineEmail size="20%" className={styles.emailIcon} />
               <p className={styles.buttonText}>E-mail</p>
             </Button>
           </a>

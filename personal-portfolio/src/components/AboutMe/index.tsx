@@ -18,23 +18,24 @@ export const AboutMe = () => {
           <img className={styles.iconInfo} src="/info.png" alt="icon" />
           <p className={styles.textButton}>Sobre mim</p>
         </Button>
+
         <p className={styles.textName}>Luis Felippe</p>
-        <ul style={{display:'flex', flexDirection: 'column'}}>
+        <ul style={{ display: "flex", flexDirection: "column" }}>
           <li className={styles.textLi}>
             <img src="/seta-direita.png" alt="icon" />
-            Desenvolvendo interfaces de usuário e APIs com
-            Javascript/Typescript desde 2021
+            Desenvolvendo interfaces de usuário e APIs com Javascript/Typescript
+            desde 2021
           </li>
           <li className={styles.textLi}>
-          <img src="/seta-direita.png" alt="icon" />
+            <img src="/seta-direita.png" alt="icon" />
             Cursando Análise e Desenvolvimento de Sistemas 7/7
           </li>
           <li className={styles.textLi}>
-          <img src="/seta-direita.png" alt="icon" />
+            <img src="/seta-direita.png" alt="icon" />
             Interesse em desenvolvimento full-stack
           </li>
           <li className={styles.textLi}>
-          <img src="/seta-direita.png" alt="icon" />
+            <img src="/seta-direita.png" alt="icon" />
             Buscando uma oportunidade para atuar como desenvolvedor
           </li>
         </ul>

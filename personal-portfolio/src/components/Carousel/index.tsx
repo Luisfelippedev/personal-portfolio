@@ -4,6 +4,7 @@ import Slider from "react-slick";
 import "slick-carousel/slick/slick.css";
 import "slick-carousel/slick/slick-theme.css";
 import { Card } from "../Card";
+import { motion } from "framer-motion";
 
 export const Carousel = () => {
   const settings = {
@@ -61,7 +62,12 @@ export const Carousel = () => {
   };
 
   return (
-    <div className="slider-container">
+    <motion.div
+      initial={{ opacity: 0, y: 30 }}
+      animate={{ opacity: 1, y: 0 }}
+      transition={{ duration: 2, ease: "easeOut" }}
+      className="slider-container"
+    >
       <Slider {...settings}>
         <Card type="userExperience" />
 
@@ -75,6 +81,6 @@ export const Carousel = () => {
 
         <Card type="api" />
       </Slider>
-    </div>
+    </motion.div>
   );
 };
