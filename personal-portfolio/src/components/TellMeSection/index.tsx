@@ -13,8 +13,12 @@ const TellMeSection = () => {
         </div>
         <p className={styles.text}>Entre em contato comigo!</p>
         <div className={styles.buttonsContainer}>
-     
-          <a href="mailto:felippe.luisdev@gmail.com" target="blank" className={styles.buttonEmail}>
+          <a
+            href="mailto:felippe.luisdev@gmail.com"
+            rel="noopener noreferrer"
+            target="blank"
+            className={styles.buttonEmail}
+          >
             <Button color="secondary">
               <MdOutlineEmail
                 style={{ marginRight: "6%" }}
@@ -24,7 +28,11 @@ const TellMeSection = () => {
               <p className={styles.buttonText}>E-mail</p>
             </Button>
           </a>
-          <a href="https://www.linkedin.com/in/luis-felippe-67b033210/" target="blank" className={styles.buttonLinkedin}>
+          <a
+            href="https://www.linkedin.com/in/luis-felippe-67b033210/"
+            target="blank"
+            className={styles.buttonLinkedin}
+          >
             <Button color="primary">
               <CiLinkedin
                 style={{ marginRight: "4%" }}

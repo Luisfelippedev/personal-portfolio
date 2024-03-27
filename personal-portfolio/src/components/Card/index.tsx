@@ -1,5 +1,6 @@
 import styles from "./styles.module.scss";
 import Image from "next/image";
+import { FcMultipleDevices } from "react-icons/fc";
 
 interface Props {
   type:
@@ -12,27 +13,25 @@ interface Props {
 }
 
 export const Card = ({ type }: Props) => {
-
-  const renderTextContentByCase = () =>  {
+  const renderTextContentByCase = () => {
     let component;
 
     switch (type) {
       case "userExperience":
-        return component = <p>Experiência do Usuário</p>;
+        return (component = <p>Experiência do Usuário</p>);
       case "devWeb":
-        return component = <p>Desenvolvimento Web</p>;
+        return (component = <p>Desenvolvimento Web</p>);
       case "responsiveLayout":
-        return component = <p>Design Responsivo</p>;
+        return (component = <p>Design Responsivo</p>);
       case "devMobile":
-        return component = <p>Desenvolvimento Mobile</p>;
+        return (component = <p>Desenvolvimento Mobile</p>);
       case "innovation":
-        return component = <p>Inovação Tecnológica</p>;
+        return (component = <p>Inovação Tecnológica</p>);
       case "api":
-        return component = <p>Conexão com Banco de Dados</p>;
+        return (component = <p>Conexão com Banco de Dados</p>);
       default:
-        return component = <p>Default</p>;
+        return (component = <p>Default</p>);
     }
-
   };
 
   const getImagePathByCase = () =>  {
@@ -56,6 +55,26 @@ export const Card = ({ type }: Props) => {
     }
 
   };
+  // const getImagePathByCase = () => {
+  //   let component;
+
+  //   switch (type) {
+  //     case "userExperience":
+  //       return (component = "/ui.png");
+  //     case "devWeb":
+  //       return (component = "/web.png");
+  //     case "responsiveLayout":
+  //       return (component = "/responsivo.png");
+  //     case "devMobile":
+  //       return (component = "/mobile.png");
+  //     case "innovation":
+  //       return (component = "/inovação.png");
+  //     case "api":
+  //       return (component = "/api.png");
+  //     default:
+  //       return (component = "null");
+  //   }
+  // };
 
   return (
     <div className={styles.card}>
@@ -67,12 +86,21 @@ export const Card = ({ type }: Props) => {
           borderRadius: "inherit",
         }}
       >
-        <Image
-          src={getImagePathByCase()}
-          alt="Descrição da imagem"
-          layout="fill"
-          objectFit="contain"
-        />
+        <div
+          style={{
+            display: "flex",
+            alignItems: "flex-end",
+            paddingTop: 20,
+          }}
+        >
+          <Image
+            src={getImagePathByCase()}
+            alt="Descrição da imagem"
+            objectFit="contain"
+            height={60}
+            width={60}
+          />
+        </div>
       </div>
       {renderTextContentByCase()}
     </div>

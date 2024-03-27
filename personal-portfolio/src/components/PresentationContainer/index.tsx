@@ -1,7 +1,7 @@
 import Image from "next/image";
 import styles from "./styles.module.scss";
 import { Button } from "../Button";
-import Link from 'next/link';
+import Link from "next/link";
 
 import { Avatar } from "flowbite-react";
 
@@ -28,14 +28,12 @@ export const PresentationContainer = () => {
               }}
             >
               <Image
-                src="/eu.jpg"
+                src="/eu.jpeg"
                 alt="Descrição da imagem"
                 layout="fill"
                 objectFit="cover"
               />
-
             </div>
-     
           </div>
           <button className={styles.fixedButton}>
             <p className={styles.myButton}>Bem vindo</p>
