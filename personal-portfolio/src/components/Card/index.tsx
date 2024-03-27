@@ -1,6 +1,5 @@
 import styles from "./styles.module.scss";
 import Image from "next/image";
-import { FcMultipleDevices } from "react-icons/fc";
 
 interface Props {
   type:
@@ -34,47 +33,26 @@ export const Card = ({ type }: Props) => {
     }
   };
 
-  const getImagePathByCase = () =>  {
+  const getImagePathByCase = () => {
     let component;
 
     switch (type) {
       case "userExperience":
-        return component = '/ui_color.png';
+        return (component = "/ui_color.png");
       case "devWeb":
-        return component = '/web_color.png';
+        return (component = "/web_color.png");
       case "responsiveLayout":
-        return component = '/responsive_color.png';
+        return (component = "/responsive_color.png");
       case "devMobile":
-        return component = '/mobile_color.png';
+        return (component = "/mobile_color.png");
       case "innovation":
-        return component = '/inovação_color.png';
+        return (component = "/inovação_color.png");
       case "api":
-        return component = '/api_color.png';
+        return (component = "/api_color.png");
       default:
-        return component = 'null';
+        return (component = "null");
     }
-
   };
-  // const getImagePathByCase = () => {
-  //   let component;
-
-  //   switch (type) {
-  //     case "userExperience":
-  //       return (component = "/ui.png");
-  //     case "devWeb":
-  //       return (component = "/web.png");
-  //     case "responsiveLayout":
-  //       return (component = "/responsivo.png");
-  //     case "devMobile":
-  //       return (component = "/mobile.png");
-  //     case "innovation":
-  //       return (component = "/inovação.png");
-  //     case "api":
-  //       return (component = "/api.png");
-  //     default:
-  //       return (component = "null");
-  //   }
-  // };
 
   return (
     <div className={styles.card}>
@@ -86,21 +64,12 @@ export const Card = ({ type }: Props) => {
           borderRadius: "inherit",
         }}
       >
-        <div
-          style={{
-            display: "flex",
-            alignItems: "flex-end",
-            paddingTop: 20,
-          }}
-        >
-          <Image
-            src={getImagePathByCase()}
-            alt="Descrição da imagem"
-            objectFit="contain"
-            height={60}
-            width={60}
-          />
-        </div>
+        <Image
+          src={getImagePathByCase()}
+          alt="Descrição da imagem"
+          layout="fill"
+          objectFit="contain"
+        />
       </div>
       {renderTextContentByCase()}
     </div>

@@ -11,7 +11,6 @@ export const Carousel = () => {
     draggable: false,
     pauseOnHover: false,
     swipe: false,
-    infinite: true,
     speed: 2000,
     slidesToShow: 4, // Definido como 1 por padrão para dispositivos móveis
     accessibility: true,

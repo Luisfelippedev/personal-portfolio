@@ -4,27 +4,25 @@
     display: flex;
     justify-content: center;
     align-items: center;
-    padding: 20%;
+    padding: 5%;
     flex-direction: row;
-
+    gap: 3%;
 }
 
 .card p {
     text-align: center;
-    font-size: 1.2rem;
+    font-size: 1.3rem;
     font-weight: 600;
     flex: 1;
-    color: rgb(75, 75, 75);
-    margin-left: 5%;
-    margin-top: 5%;
+    color: #352d27;
+    display: flex;
+
 }
 
 .imageContainer{
-
-
-    display: flex;
-    align-items: center;
-    justify-content: center;
+    height: 70px;
+    width: 70px;
+   
 }
 
 @media (max-width: 670px){
@@ -48,9 +46,4 @@
         font-weight: 800;
     }
     
-}
-
-.icon{
-    width: 70px;
-    height: 70px;
 }
