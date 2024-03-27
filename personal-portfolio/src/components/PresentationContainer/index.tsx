@@ -3,8 +3,8 @@
 import Image from "next/image";
 import styles from "./styles.module.scss";
 import { Button } from "../Button";
-import Link from "next/link";
 import { motion } from "framer-motion";
+import { Link } from "react-scroll";
 
 import { Avatar } from "flowbite-react";
 
@@ -67,7 +67,13 @@ export const PresentationContainer = () => {
         transition={{ duration: 0.2, ease: "easeOut" }}
         className={styles.lastBox}
       >
-        <Link href={"/#section-project"} className={styles.buttonProjects}>
+        <Link
+          to="section-project"
+          spy={true}
+          smooth={true}
+          duration={600} // Duração em milissegundos do scroll
+          className={styles.buttonProjects}
+        >
           <Button color="secondary">
             <p className={styles.buttonText}>Projetos</p>
           </Button>

@@ -14,6 +14,7 @@
     "@mui/icons-material": "^5.15.14",
     "@mui/material": "^5.15.14",
     "@react-spring/web": "^9.7.3",
+    "@types/react-scroll": "^1.8.10",
     "@types/react-slick": "^0.23.13",
     "flowbite-react": "^0.7.2",
     "framer-motion": "^11.0.22",
@@ -21,6 +22,7 @@
     "react": "^18",
     "react-dom": "^18",
     "react-icons": "^5.0.1",
+    "react-scroll": "^1.9.0",
     "react-slick": "^0.28.1",
     "sass": "^1.71.0",
     "slick-carousel": "^1.8.0"
