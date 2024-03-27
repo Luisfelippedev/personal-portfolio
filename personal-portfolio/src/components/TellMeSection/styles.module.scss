@@ -62,8 +62,9 @@
     font-weight: 800;
     width: 100%;
     text-align: center;
-
+    
     @media (max-width: 1000px) {
+        width: 80%;
         font-size: 2rem;
     }
 
