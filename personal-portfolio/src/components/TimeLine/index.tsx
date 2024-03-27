@@ -1,5 +1,7 @@
 "use client";
 
+import { motion } from "framer-motion";
+
 import {
   Button,
   Timeline,
@@ -31,50 +33,77 @@ export const TimeLine = () => {
 
   return (
     <Timeline horizontal={isSmallScreen ? false : true}>
-      <TimelineItem>
-        <TimelinePoint icon={HiCalendar}></TimelinePoint>
-        <TimelineContent style={{ marginTop: "1rem" }}>
-          <TimelineTime>2021</TimelineTime>
-          <TimelineTitle>Faculdade</TimelineTitle>
-          <TimelineBody>
-            Iniciando minha graduação em análise e desenvolvimento de sistemas
-            através do Instituto Federal da Paraíba.
-          </TimelineBody>
-        </TimelineContent>
-      </TimelineItem>
-      <TimelineItem >
-        <TimelinePoint icon={HiCalendar}></TimelinePoint>
-        <TimelineContent style={{ marginTop: "1rem" }}>
-          <TimelineTime>2022</TimelineTime>
-          <TimelineTitle>JavaScript</TimelineTitle>
-          <TimelineBody>
-            Explorando de forma mais detalhada a linguagem JavaScript e
-            aprofundando-me em seus aspectos tanto no desenvolvimento front-end
-            quanto no back-end.
-          </TimelineBody>
-        </TimelineContent>
-      </TimelineItem>
-      <TimelineItem>
-        <TimelinePoint icon={HiCalendar}></TimelinePoint>
-        <TimelineContent style={{ marginTop: "1rem" }}>
-          <TimelineTime>2023</TimelineTime>
-          <TimelineTitle>Bibliotecas e Projetos</TimelineTitle>
-          <TimelineBody>
-            Explorando o imenso potencial das bibliotecas em JavaScript e criando projetos pessoais de maneira eficiente.
-          </TimelineBody>
-        </TimelineContent>
-      </TimelineItem>
-      <TimelineItem>
-        <TimelinePoint icon={HiCalendar}></TimelinePoint>
-        <TimelineContent style={{ marginTop: "1rem" }}>
-          <TimelineTime>2024</TimelineTime>
-          <TimelineTitle>Até o momento</TimelineTitle>
-          <TimelineBody>
-            Em busca da minha primeira oportunidade como desenvolvedor.
-          </TimelineBody>
-        </TimelineContent>
-      </TimelineItem>
-      
+      <motion.div
+        initial={{ x: -100, opacity: 0 }}
+        whileInView={{ x: 0, opacity: 1 }}
+        transition={{ duration: 0.5, ease: "easeOut" }}
+      >
+        <TimelineItem>
+          <TimelinePoint icon={HiCalendar}></TimelinePoint>
+          <TimelineContent style={{ marginTop: "1rem" }}>
+            <TimelineTime>2021</TimelineTime>
+            <TimelineTitle>Faculdade</TimelineTitle>
+            <TimelineBody>
+              Iniciando minha graduação em análise e desenvolvimento de sistemas
+              através do Instituto Federal da Paraíba.
+            </TimelineBody>
+          </TimelineContent>
+        </TimelineItem>
+      </motion.div>
+
+      <motion.div
+        initial={{ x: -100, opacity: 0 }}
+        whileInView={{ x: 0, opacity: 1 }}
+        transition={{ duration: 0.5, delay: 0.1, ease: "easeOut" }}
+      >
+        <TimelineItem>
+          <TimelinePoint icon={HiCalendar}></TimelinePoint>
+          <TimelineContent style={{ marginTop: "1rem" }}>
+            <TimelineTime>2022</TimelineTime>
+            <TimelineTitle>JavaScript</TimelineTitle>
+            <TimelineBody>
+              Explorando de forma mais detalhada a linguagem JavaScript e
+              aprofundando-me em seus aspectos tanto no desenvolvimento
+              front-end quanto no back-end.
+            </TimelineBody>
+          </TimelineContent>
+        </TimelineItem>
+      </motion.div>
+
+      <motion.div
+        initial={{ x: -100, opacity: 0 }}
+        whileInView={{ x: 0, opacity: 1 }}
+        transition={{ duration: 0.5, delay: 0.25, ease: "easeOut" }}
+      >
+        <TimelineItem>
+          <TimelinePoint icon={HiCalendar}></TimelinePoint>
+          <TimelineContent style={{ marginTop: "1rem" }}>
+            <TimelineTime>2023</TimelineTime>
+            <TimelineTitle>Bibliotecas e Projetos</TimelineTitle>
+            <TimelineBody>
+              Explorando o imenso potencial das bibliotecas em JavaScript e
+              criando projetos pessoais de maneira eficiente.
+            </TimelineBody>
+          </TimelineContent>
+        </TimelineItem>
+      </motion.div>
+
+      <motion.div
+        initial={{ x: -100, opacity: 0 }}
+        whileInView={{ x: 0, opacity: 1 }}
+        transition={{ duration: 0.5, delay: 0.35, ease: "easeOut" }}
+      >
+        <TimelineItem>
+          <TimelinePoint icon={HiCalendar}></TimelinePoint>
+          <TimelineContent style={{ marginTop: "1rem" }}>
+            <TimelineTime>2024</TimelineTime>
+            <TimelineTitle>Até o momento</TimelineTitle>
+            <TimelineBody>
+              Em busca da minha primeira oportunidade como desenvolvedor.
+            </TimelineBody>
+          </TimelineContent>
+        </TimelineItem>
+      </motion.div>
     </Timeline>
   );
 };

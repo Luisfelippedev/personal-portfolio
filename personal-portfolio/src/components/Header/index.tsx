@@ -2,6 +2,7 @@ import { Navbar } from "../Navbar";
 import { PresentationContainer } from "../PresentationContainer";
 import styles from "./styles.module.scss";
 import { Carousel } from "../Carousel";
+import { motion } from "framer-motion";
 
 export const Header = () => {
   return (

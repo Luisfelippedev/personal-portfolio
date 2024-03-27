@@ -30,6 +30,7 @@
     align-items: center;
     justify-content: center;
     background: linear-gradient(#ccc, #f0f0f0);
+    perspective: '500px';
 
     @media (max-width: 1000px) {
         width: 13vw; /* Ajuste para telas menores */
@@ -132,6 +133,18 @@
 
 
 .buttonEmail:hover{
-    text-decoration: underline;
     color: white;
+    .emailIcon{
+        color: white;
+    }
 }
+
+.emailIcon{
+    margin-right: 6%;
+
+}
+
+.emailIcon{
+    color: #352d27;
+}
+

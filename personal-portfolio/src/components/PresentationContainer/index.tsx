@@ -1,7 +1,10 @@
+"use client";
+
 import Image from "next/image";
 import styles from "./styles.module.scss";
 import { Button } from "../Button";
 import Link from "next/link";
+import { motion } from "framer-motion";
 
 import { Avatar } from "flowbite-react";
 
@@ -50,7 +53,6 @@ export const PresentationContainer = () => {
           </button> */}
         </div>
       </div>
-
       <div className={styles.secondBox}>
         <p className={styles.text}>
           Desenvolvimento de soluções em software, aplicações e interfaces de
@@ -58,13 +60,19 @@ export const PresentationContainer = () => {
         </p>
       </div>
 
-      <div className={styles.lastBox}>
+      <motion.div
+        initial={{ y: -100, opacity: 0 }}
+        animate={{ y: 0, opacity: 1 }}
+        exit={{ y: -100, opacity: 0 }}
+        transition={{ duration: 0.2, ease: "easeOut" }}
+        className={styles.lastBox}
+      >
         <Link href={"/#section-project"} className={styles.buttonProjects}>
           <Button color="secondary">
             <p className={styles.buttonText}>Projetos</p>
           </Button>
         </Link>
-      </div>
+      </motion.div>
     </div>
   );
 };
