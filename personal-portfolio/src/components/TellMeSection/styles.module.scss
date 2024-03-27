@@ -118,7 +118,13 @@
 }
 
 .buttonLinkedin {
-    @include button
+    @include button;
+   
+}
+.buttonLinkedin:hover{
+    .linkedinIcon{
+        color: white;
+    }
 }
 
 .buttonEmail{
@@ -126,25 +132,26 @@
 }
 
 
-.buttonLinkedin:hover{
-    text-decoration: underline;
-
-}
-
-
 .buttonEmail:hover{
-    color: white;
     .emailIcon{
         color: white;
     }
 }
 
+
+
 .emailIcon{
+    margin-right: 6%;
+    color: black;
+
+}
+
+
+.linkedinIcon{
+    margin-right: 4%;
     margin-right: 6%;
 
 }
 
-.emailIcon{
-    color: #352d27;
-}
+
 

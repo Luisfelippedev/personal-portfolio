@@ -74,7 +74,7 @@ export const PresentationContainer = () => {
           duration={600} // Duração em milissegundos do scroll
           className={styles.buttonProjects}
         >
-          <Button color="secondary">
+          <Button color="primary">
             <p className={styles.buttonText}>Projetos</p>
           </Button>
         </Link>
