@@ -26,9 +26,9 @@ const TellMeSection = () => {
             target="blank"
             className={styles.buttonEmail}
           >
-            <Button color="secondary">
+            <Button color="primary">
               <MdOutlineEmail size="20%" className={styles.emailIcon} />
-              <p className={styles.buttonText}>E-mail</p>
+              E-mail
             </Button>
           </a>
           <a
@@ -38,11 +38,10 @@ const TellMeSection = () => {
           >
             <Button color="primary">
               <CiLinkedin
-                style={{ marginRight: "4%" }}
                 size="23%"
-                color="black"
+                className={styles.linkedinIcon}
               />
-              <p className={styles.buttonText}>LinkedIn</p>
+              LinkedIn
             </Button>
           </a>
         </div>
