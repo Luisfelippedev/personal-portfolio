@@ -29,7 +29,8 @@
     border-bottom-right-radius: 100px;
     align-items: center;
     padding: 3% 5% 10% 5% ;
-
+    box-shadow: 0px 5px 10px rgba(0, 0, 0, 0.1);    
+    z-index: 9000;
 }
 
 .presentationContainer{
@@ -46,15 +47,17 @@
     display: flex;
     background-color: $background-200;
     background-blend-mode: $blend-mode;
+    border: 0px solid black, 0;
     height: 75%;
+
 }
+
 
 .lastSection{
     display: flex;
     height: auto;
     background-color: $background-200;
     background-blend-mode: $blend-mode;
-    border-bottom-left-radius: 100px;
     border-bottom-right-radius: 100px;
     overflow: hidden;
     width: 100%;
@@ -62,8 +65,9 @@
     justify-content: center;
     align-items: center;
     flex: 1;
-
    position: relative;
+   box-shadow: inset 0px -10px 20px rgba(0, 0, 0, 0.1);
+z-index: 3;
 
 
   }

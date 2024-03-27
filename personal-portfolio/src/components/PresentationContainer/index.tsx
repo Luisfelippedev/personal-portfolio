@@ -35,7 +35,7 @@ export const PresentationContainer = () => {
               />
             </div>
           </div>
-          <button className={styles.fixedButton}>
+          {/* <button className={styles.fixedButton}>
             <p className={styles.myButton}>Bem vindo</p>
 
             <div className={styles.imageAdeus}>
@@ -47,7 +47,7 @@ export const PresentationContainer = () => {
                 style={{ marginLeft: 5 }}
               />
             </div>
-          </button>
+          </button> */}
         </div>
       </div>
 

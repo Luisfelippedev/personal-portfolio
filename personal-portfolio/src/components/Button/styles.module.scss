@@ -13,12 +13,31 @@
     @include genericButton;
     background-color: white;
     color: $text;
+    border: 2px solid transparent; /* Borda transparente para transição suave */
+    transition: background-color 0.3s, border-color 0.3s, transform 0.3s; /* Transições suaves */
+
+    /* Efeito de sombra suave */
+    box-shadow: 0px 2px 4px rgba(0, 0, 0, 0.1);
 }
 
-.ButtonSecondary{
-    @include genericButton;
-    background-color: black;
-    color: white;
+
+
+.ButtonSecondary {
+    @include genericButton; /* Selecione o estilo genérico do botão */
+    background-color: white; /* Cor de fundo */
+    color: #352d27; /* Cor do texto */
+    border: 2px solid transparent; /* Borda transparente para transição suave */
+    transition: background-color 0.3s, border-color 0.3s, transform 0.3s; /* Transições suaves */
+
+    /* Efeito de sombra suave */
+    box-shadow: 0px 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+.ButtonSecondary:hover {
+    background-color: #352d27; /* Altere a cor de fundo ao passar o mouse */
+    color: white; /* Altere a cor do texto ao passar o mouse */
+   /* Altere a cor da borda ao passar o mouse */
+    transform: translateY(-2px); /* Efeito de elevação ao passar o mouse */
 }
 
 .contentButton{
