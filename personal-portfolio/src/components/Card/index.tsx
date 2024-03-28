@@ -27,7 +27,7 @@ export const Card = ({ type }: Props) => {
       case "innovation":
         return (component = <p>Inovação Tecnológica</p>);
       case "api":
-        return (component = <p>Conexão com Banco de Dados</p>);
+        return (component = <p>Banco de Dados</p>);
       default:
         return (component = <p>Default</p>);
     }

@@ -25,7 +25,7 @@ interface ProjectDetails {
 const CardProject = ({ project }: { project: ProjectType }) => {
   const projectDetails: Record<ProjectType, ProjectDetails> = {
     devblog: {
-      name: "DevBlog",
+      name: "dev-blog",
       description:
         "Um blog que viabiliza aos usuários a criação de contas, efetuar o login e realizar postagens para promover a interação entre todos os participantes da plataforma.",
       linkGitHub: "https://github.com/Luisfelippedev/devblog-mongodb",
@@ -39,7 +39,7 @@ const CardProject = ({ project }: { project: ProjectType }) => {
       ],
     },
     cacheredis: {
-      name: "Cache-com-redis",
+      name: "cache-com-redis",
       description:
         "API REST com operações CRUD. Visando aprimorar a compreensão prática de como construir uma aplicação mais eficiente para os usuários utilizando cache.",
       linkGitHub: "https://github.com/Luisfelippedev/cache-com-redis",
@@ -53,7 +53,7 @@ const CardProject = ({ project }: { project: ProjectType }) => {
       ],
     },
     spatialdata: {
-      name: "Dados-espaciais",
+      name: "dados-espaciais",
       description:
         "Mapa global com a capacidade de adicionar marcadores, utilizando um banco de dados local e realizando uma abstração da API do Google Maps.",
       linkGitHub: "https://github.com/Luisfelippedev/using-spatial-data",

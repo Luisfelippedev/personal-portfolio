@@ -28,7 +28,7 @@ export const AboutMe = () => {
           </li>
           <li className={styles.textLi}>
             <img src="/seta-direita.png" alt="icon" />
-            Cursando Análise e Desenvolvimento de Sistemas 7/7
+            Análise e Desenvolvimento de Sistemas 6/6
           </li>
           <li className={styles.textLi}>
             <img src="/seta-direita.png" alt="icon" />
