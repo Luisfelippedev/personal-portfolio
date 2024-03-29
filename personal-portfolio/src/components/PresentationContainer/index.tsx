@@ -54,10 +54,8 @@ export const PresentationContainer = () => {
         </div>
       </div>
       <div className={styles.secondBox}>
-        <p className={styles.text}>
-          Desenvolvimento de soluções em software, aplicações e interfaces de
-          usuário.
-        </p>
+        <p className={styles.text}>Luis Felippe</p>
+        <p className={styles.subtitle}>Engenheiro de Software</p>
       </div>
 
       <motion.div
