@@ -12,18 +12,11 @@ Button:hover{
   cursor: pointer;
 }
 
-// .slick-list {margin: 0 -10px;}
-// .slick-slide>div {
-//   padding: 0 10px;
-//   display: grid;
-//   place-items: center;
-//   width: 80%;
-//   margin: auto;
-
-//   // height: 100vh;
-
-// }
 
 
-
-
+#time-line-point span {
+  background-color: rgba(152, 128, 94, 0.527) !important;
+}
+#time-line-point svg{
+  color: black;
+}

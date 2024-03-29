@@ -83,7 +83,10 @@
 }
 
 .lastBox{
-    @include box;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding-top: 13%;
     flex: 3;
 }
 

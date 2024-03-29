@@ -39,10 +39,12 @@ export const TimeLine = () => {
         transition={{ duration: 0.5, ease: "easeOut" }}
       >
         <TimelineItem>
-          <TimelinePoint icon={HiCalendar}></TimelinePoint>
+          <TimelinePoint id="time-line-point" icon={HiCalendar}></TimelinePoint>
           <TimelineContent style={{ marginTop: "1rem" }}>
             <TimelineTime>2021</TimelineTime>
-            <TimelineTitle>Faculdade</TimelineTitle>
+            <TimelineTitle style={{ color: "#352d27" }}>
+              Faculdade
+            </TimelineTitle>
             <TimelineBody>
               Iniciando minha graduação em análise e desenvolvimento de sistemas
               através do Instituto Federal da Paraíba.
@@ -57,10 +59,12 @@ export const TimeLine = () => {
         transition={{ duration: 0.5, delay: 0.1, ease: "easeOut" }}
       >
         <TimelineItem>
-          <TimelinePoint icon={HiCalendar}></TimelinePoint>
+          <TimelinePoint id="time-line-point" icon={HiCalendar}></TimelinePoint>
           <TimelineContent style={{ marginTop: "1rem" }}>
             <TimelineTime>2022</TimelineTime>
-            <TimelineTitle>JavaScript</TimelineTitle>
+            <TimelineTitle style={{ color: "#352d27" }}>
+              JavaScript
+            </TimelineTitle>
             <TimelineBody>
               Explorando de forma mais detalhada a linguagem JavaScript e
               aprofundando-me em seus aspectos tanto no desenvolvimento
@@ -76,10 +80,12 @@ export const TimeLine = () => {
         transition={{ duration: 0.5, delay: 0.25, ease: "easeOut" }}
       >
         <TimelineItem>
-          <TimelinePoint icon={HiCalendar}></TimelinePoint>
+          <TimelinePoint id="time-line-point" icon={HiCalendar}></TimelinePoint>
           <TimelineContent style={{ marginTop: "1rem" }}>
             <TimelineTime>2023</TimelineTime>
-            <TimelineTitle>Bibliotecas e Projetos</TimelineTitle>
+            <TimelineTitle style={{ color: "#352d27" }}>
+              Bibliotecas e Projetos
+            </TimelineTitle>
             <TimelineBody>
               Explorando o imenso potencial das bibliotecas em JavaScript e
               criando projetos pessoais de maneira eficiente.
@@ -94,10 +100,12 @@ export const TimeLine = () => {
         transition={{ duration: 0.5, delay: 0.35, ease: "easeOut" }}
       >
         <TimelineItem>
-          <TimelinePoint icon={HiCalendar}></TimelinePoint>
+          <TimelinePoint id="time-line-point" icon={HiCalendar}></TimelinePoint>
           <TimelineContent style={{ marginTop: "1rem" }}>
             <TimelineTime>2024</TimelineTime>
-            <TimelineTitle>Até o momento</TimelineTitle>
+            <TimelineTitle style={{ color: "#352d27" }}>
+              Até o momento
+            </TimelineTitle>
             <TimelineBody>
               Em busca da minha primeira oportunidade como desenvolvedor.
             </TimelineBody>
