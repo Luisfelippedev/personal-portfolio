@@ -14,7 +14,7 @@ const Footer = () => {
         </a>
         <p className={styles.text}>/</p>
         <a
-          href="https://github.com/Luisffelipe"
+          href="https://github.com/Luisfelippedev"
           target="_blank"
           className={styles.textLink}
         >
