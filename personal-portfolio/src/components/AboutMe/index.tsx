@@ -10,9 +10,10 @@ export const AboutMe = () => {
           style={{
             cursor: "auto",
             pointerEvents: "none",
-            backgroundColor: "rgb(165 243 252 / var(--tw-bg-opacity))",
+            backgroundColor: "rgba(0, 0, 0, 0.822)",
             height: 50,
             width: 168,
+            marginBottom: 20,
           }}
         >
           <img className={styles.iconInfo} src="/info.png" alt="icon" />
