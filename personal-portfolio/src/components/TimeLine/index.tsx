@@ -107,7 +107,7 @@ export const TimeLine = () => {
               Até o momento
             </TimelineTitle>
             <TimelineBody>
-              Em busca da minha primeira oportunidade como desenvolvedor.
+              Em busca de uma oportunidade como desenvolvedor.
             </TimelineBody>
           </TimelineContent>
         </TimelineItem>

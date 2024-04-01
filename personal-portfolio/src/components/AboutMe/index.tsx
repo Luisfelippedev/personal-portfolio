@@ -37,7 +37,7 @@ export const AboutMe = () => {
           </li>
           <li className={styles.textLi}>
             <img src="/seta-direita.png" alt="icon" />
-            Buscando uma oportunidade para atuar como desenvolvedor
+            Aberto para oportunidades
           </li>
         </ul>
       </div>
