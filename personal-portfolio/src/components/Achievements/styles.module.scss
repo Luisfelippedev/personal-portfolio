@@ -1,0 +1,47 @@
+
+
+.container {
+    display: flex;
+    min-width: 80vw;
+    flex-direction: column;
+    box-sizing: border-box;
+    gap: 3rem;
+    justify-content: center;
+    align-items: start;
+    padding-bottom: 3rem;
+
+}
+
+.textButton {
+    color: white;
+font-weight: 600;
+font-size: 1.2rem;
+
+@media (max-width: 768px) {
+    font-size: 1.2rem;
+}
+}
+
+
+.iconMedal{
+    color: white;
+    margin-right: 0.5rem;
+}
+
+
+.cardsContainer{
+    display: grid;
+    grid-template-columns: repeat(4, 1fr); /* Cria 3 colunas com larguras iguais */
+    gap: 2rem; /* Espaço entre as colunas */
+    box-sizing: border-box;
+    
+    @media (max-width: 1440px){
+        grid-template-columns: repeat(3, 1fr); /* Cria 3 colunas com larguras iguais */
+    }
+    @media (max-width: 1050px){
+        grid-template-columns: repeat(2, 1fr); /* Cria 3 colunas com larguras iguais */
+    }
+    @media (max-width: 680px){
+        grid-template-columns: repeat(1, 1fr); /* Cria 3 colunas com larguras iguais */
+    }
+}
