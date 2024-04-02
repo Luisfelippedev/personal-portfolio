@@ -41,22 +41,19 @@
       transform: rotateY(-80deg);
     }
   
-    p {
-      font-size: 20px;
-      font-weight: bolder;
-    }
   }
 
 
   .textTitle {
     color: rgb(60, 60, 60) !important;
     font-weight: 200 !important;
-    font-size: 3rem !important;
+    font-size: 2rem !important;
     font-family: "Caveat", cursive;
+    font-style: italic !important;
     font-optical-sizing: auto;
 
-    @media (max-width: 768px) {
-        font-size: 2rem;
+    @media (max-width: 400px) {
+        font-size: 1.5rem;
     }
 }
   
