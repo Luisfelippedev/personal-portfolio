@@ -20,7 +20,7 @@ export const CardAchievements = ({ project }: { project: ProjectType }) => {
     loopis: {
       name: "LoopisJr",
       description:
-        "Durante um ano e meio, tive a oportunidade de trabalhar na empresa Júnior do IFPB - campus CZ. Na área de projetos, participei ativamente de projetos reais para clientes da empresa, o que me permitiu adquirir conhecimento e aplicá-lo na prática.",
+        "Durante um ano e meio, tive a oportunidade de trabalhar na empresa Júnior do IFPB - campus CZ. Meu cargo na empresa evoluiu de trainee para consultor de projetos. Uma digna experiência.",
       image: "loopis.png",
     },
   };

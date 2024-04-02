@@ -13,6 +13,10 @@ import { SiMongodb } from "react-icons/si";
 import { BiLogoPostgresql } from "react-icons/bi";
 import { FaLock } from "react-icons/fa";
 import { FaStar } from "react-icons/fa6";
+import { TbBrandReactNative } from "react-icons/tb";
+import { SiStyledcomponents } from "react-icons/si";
+import { SiAxios } from "react-icons/si";
+import { BiLogoTypescript } from "react-icons/bi";
 
 type ProjectType = "devblog" | "cacheredis" | "spatialdata" | "nobullying";
 
@@ -86,11 +90,10 @@ const CardProject = ({
         "Aplicação mobile para submissão de denúncias acerca de bullying e assédio no Instituto Federal da Paraíba, Campus Cajazeiras.",
       image: "NoBullyingLogo.svg",
       icons: [
-        <IoLogoNodejs size={25} key="node" />,
-        <SiExpress size={25} key="express" />,
-        <SiHandlebarsdotjs size={25} key="handlebars" />,
-        <BiLogoPostgresql size={25} key="postgresql" />,
-        <SiSequelize size={25} key="sequelize" />,
+        <TbBrandReactNative size={25} key="react-native" />,
+        <SiStyledcomponents size={25} key="styled-components" />,
+        <SiAxios size={25} key="axios" />,
+        <BiLogoTypescript size={25} key="typescript" />,
       ],
     },
   };
