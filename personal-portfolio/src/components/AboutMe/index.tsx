@@ -29,7 +29,11 @@ export const AboutMe = () => {
           </li>
           <li className={styles.textLi}>
             <img src="/seta-direita.png" alt="icon" />
-            Análise e Desenvolvimento de Sistemas 6/6
+            Análise e Desenvolvimento de Sistemas (2021-2024)
+          </li>
+          <li className={styles.textLi}>
+            <img src="/seta-direita.png" alt="icon" />
+            Técnico em Informática (2017-2019)
           </li>
           <li className={styles.textLi}>
             <img src="/seta-direita.png" alt="icon" />
