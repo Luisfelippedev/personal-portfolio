@@ -55,7 +55,7 @@ export const PresentationContainer = () => {
       </div>
       <div className={styles.secondBox}>
         <p className={styles.text}>Luis Felippe</p>
-        <p className={styles.subtitle}>Engenheiro de Software</p>
+        <p className={styles.subtitle}>Desenvolvedor de Sistemas</p>
       </div>
 
       <motion.div

@@ -58,7 +58,7 @@ const CardProject = ({
       name: "cache-com-redis",
       description:
         "API REST com operações CRUD. Visando aprimorar a compreensão prática de como construir uma aplicação mais eficiente para os usuários utilizando cache.",
-      linkGitHub: "https://github.com/Luisfelippedev/cache-com-redis",
+      linkGitHub: "https://www.google.com/intl/pt-br/drive/about.html",
       linkDeploy: "https://github.com/Luisfelippedev/cache-com-redis",
       image: "cache.svg",
       icons: [
@@ -114,43 +114,45 @@ const CardProject = ({
                   <div className={styles.yellowBall} />
                   <div className={styles.greenBall} />
                 </div>
-                <div className={styles.githubIcon}>
-                  <div
-                    style={{
-                      display: "flex",
-                      flexDirection: "row",
-                      alignItems: "center",
-                      justifyContent: "center",
-                    }}
-                  >
-                    {star ? (
-                      <FaStar
-                        style={{ marginRight: 15 }}
-                        color="#FFD700"
-                        size={35}
-                      />
-                    ) : (
-                      ""
-                    )}
+                <Link target="blank" href={linkGitHub ? linkGitHub : "#"}>
+                  <div className={styles.githubIcon}>
+                    <div
+                      style={{
+                        display: "flex",
+                        flexDirection: "row",
+                        alignItems: "center",
+                        justifyContent: "center",
+                      }}
+                    >
+                      {star ? (
+                        <FaStar
+                          style={{ marginRight: 15 }}
+                          color="#FFD700"
+                          size={35}
+                        />
+                      ) : (
+                        ""
+                      )}
 
-                    {privateStatus ? (
-                      <div
-                        style={{
-                          display: "flex",
-                          alignItems: "center",
-                          justifyContent: "center",
-                          height: 35,
-                        }}
-                      >
-                        <FaLock size={30} />
-                      </div>
-                    ) : (
-                      <div className={styles.githubIcon}>
-                        <FaGithub size={35} />
-                      </div>
-                    )}
+                      {privateStatus ? (
+                        <div
+                          style={{
+                            display: "flex",
+                            alignItems: "center",
+                            justifyContent: "center",
+                            height: 35,
+                          }}
+                        >
+                          <FaLock size={30} />
+                        </div>
+                      ) : (
+                        <div className={styles.githubIcon}>
+                          <FaGithub size={35} />
+                        </div>
+                      )}
+                    </div>
                   </div>
-                </div>
+                </Link>
               </div>
               <p className={styles.textPrimary}>{name}</p>
               <p className={styles.textSecondary}>{description}</p>
