@@ -32,15 +32,12 @@ const TellMeSection = () => {
             </Button>
           </a>
           <a
-            href="https://www.linkedin.com/in/luis-felippe-67b033210/"
+            href="https://www.linkedin.com/in/luisfelippedev/"
             target="blank"
             className={styles.buttonLinkedin}
           >
             <Button color="primary">
-              <CiLinkedin
-                size="23%"
-                className={styles.linkedinIcon}
-              />
+              <CiLinkedin size="23%" className={styles.linkedinIcon} />
               LinkedIn
             </Button>
           </a>

@@ -25,7 +25,7 @@ export const AboutMe = () => {
           <li className={styles.textLi}>
             <img src="/seta-direita.png" alt="icon" />
             Desenvolvendo interfaces de usuário e APIs com Javascript/Typescript
-            desde 2021
+            desde 2022
           </li>
           <li className={styles.textLi}>
             <img src="/seta-direita.png" alt="icon" />

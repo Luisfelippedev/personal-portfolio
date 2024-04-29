@@ -7,10 +7,9 @@ import Projects from "@/components/Projects";
 import TellMeSection from "@/components/TellMeSection";
 import Footer from "@/components/Footer";
 
-
 export default function Home() {
   return (
-    <div className={styles.container}>
+    <div id="home-section" className={styles.container}>
       <Header />
       <div className={styles.background}>
         <AboutMe />
