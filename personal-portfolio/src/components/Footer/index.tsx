@@ -6,7 +6,7 @@ const Footer = () => {
       <p className={styles.textRights}>© 2024 All rights reserved.</p>
       <div className={styles.socialBox}>
         <a
-          href="https://www.linkedin.com/in/luis-felippe-67b033210/"
+          href="https://www.linkedin.com/in/luisfelippedev/"
           target="_blank"
           className={styles.textLink}
         >

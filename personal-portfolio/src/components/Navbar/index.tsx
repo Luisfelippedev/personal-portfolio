@@ -72,7 +72,7 @@ export const Navbar = () => {
 
       <div className={styles.lastBox}>
         <a
-          href="https://www.linkedin.com/in/luis-felippe-67b033210/"
+          href="https://www.linkedin.com/in/luisfelippedev/"
           target="_blank"
           className={styles.textLink}
         >

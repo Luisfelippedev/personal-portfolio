@@ -1,24 +1,17 @@
 import Link from "next/link";
 import styles from "./styles.module.scss";
 import { FaGithub } from "react-icons/fa";
-import { IoLogoNodejs } from "react-icons/io";
-import {
-  SiExpress,
-  SiHandlebarsdotjs,
-  SiRedis,
-  SiSequelize,
-} from "react-icons/si";
-import { FaBootstrap } from "react-icons/fa";
-import { SiMongodb } from "react-icons/si";
-import { BiLogoPostgresql } from "react-icons/bi";
 import { FaLock } from "react-icons/fa";
 import { FaStar } from "react-icons/fa6";
 import { TbBrandReactNative } from "react-icons/tb";
 import { SiStyledcomponents } from "react-icons/si";
 import { SiAxios } from "react-icons/si";
 import { BiLogoTypescript } from "react-icons/bi";
+import { TbBrandNextjs } from "react-icons/tb";
+import { FaSass } from "react-icons/fa";
+import { TbBrandFramerMotion } from "react-icons/tb";
 
-type ProjectType = "devblog" | "cacheredis" | "spatialdata" | "nobullying";
+type ProjectType = "tridev" | "personalPortfolio" | "nobullying";
 
 interface ProjectDetails {
   name: string;
@@ -39,49 +32,32 @@ const CardProject = ({
   project: ProjectType;
 }) => {
   const projectDetails: Record<ProjectType, ProjectDetails> = {
-    devblog: {
-      name: "dev-blog",
+    tridev: {
+      name: "tridev",
       description:
-        "Um blog que viabiliza aos usuários a criação de contas, efetuar o login e realizar postagens para promover a interação entre todos os participantes da plataforma.",
-      linkGitHub: "https://github.com/Luisfelippedev/devblog-mongodb",
-      linkDeploy: "https://github.com/Luisfelippedev/devblog-mongodb",
-      image: "blog.png",
+        "Landign Page que apresenta a marca Tridev Soluções. A tridev presta serviços de desenvolvimento de sites. Na qual, eu sou fundador da equipe.",
+      linkGitHub: "https://github.com/Luisfelippedev/tridev",
+      linkDeploy: "https://www.tridev.com.br/",
+      image: "logo-no-background.png",
       icons: [
-        <IoLogoNodejs size={25} key="node" />,
-        <SiExpress size={25} key="express" />,
-        <SiHandlebarsdotjs size={25} key="handlebars" />,
-        <FaBootstrap size={25} key="bootstrap" />,
-        <SiMongodb size={25} key="mongodb" />,
+        <TbBrandNextjs size={25} key="nextjs" />,
+        <BiLogoTypescript size={25} key="typescript" />,
+        <FaSass size={25} key="sass" />,
+        <TbBrandFramerMotion size={25} key="frame-motion" />,
       ],
     },
-    cacheredis: {
-      name: "cache-com-redis",
+    personalPortfolio: {
+      name: "personal-portfolio",
       description:
-        "API REST com operações CRUD. Visando aprimorar a compreensão prática de como construir uma aplicação mais eficiente para os usuários utilizando cache.",
-      linkGitHub: "https://www.google.com/intl/pt-br/drive/about.html",
-      linkDeploy: "https://github.com/Luisfelippedev/cache-com-redis",
-      image: "cache.svg",
+        "Landign page de apresentação pessoal, construida em Nextjs.",
+      linkGitHub: "https://github.com/Luisfelippedev/personal-portfolio",
+      linkDeploy: "https://luisfelippe.vercel.app/",
+      image: "personal-porfolio-icon.png",
       icons: [
-        <IoLogoNodejs size={25} key="node" />,
-        <SiExpress size={25} key="express" />,
-        <SiRedis size={25} key="redis" />,
-        <BiLogoPostgresql size={25} key="postgresql" />,
-        <SiSequelize size={25} key="sequelize" />,
-      ],
-    },
-    spatialdata: {
-      name: "dados-espaciais",
-      description:
-        "Mapa global com a capacidade de adicionar marcadores, utilizando um banco de dados local e realizando uma abstração da API do Google Maps.",
-      linkGitHub: "https://github.com/Luisfelippedev/using-spatial-data",
-      linkDeploy: "https://github.com/Luisfelippedev/using-spatial-data",
-      image: "map.png",
-      icons: [
-        <IoLogoNodejs size={25} key="node" />,
-        <SiExpress size={25} key="express" />,
-        <SiHandlebarsdotjs size={25} key="handlebars" />,
-        <BiLogoPostgresql size={25} key="postgresql" />,
-        <SiSequelize size={25} key="sequelize" />,
+        <TbBrandNextjs size={25} key="nextjs" />,
+        <BiLogoTypescript size={25} key="typescript" />,
+        <FaSass size={25} key="sass" />,
+        <TbBrandFramerMotion size={25} key="frame-motion" />,
       ],
     },
     nobullying: {
@@ -103,144 +79,74 @@ const CardProject = ({
 
   return (
     <div className={styles.container}>
-      {linkDeploy ? (
-        <Link target="blank" href={linkDeploy ? linkDeploy : "#"}>
-          <div className={styles.link}>
-            <div className={styles.firstBox}>
-              <div className={styles.ballsBox}>
-                <div style={{ display: "flex", flexDirection: "row" }}>
-                  <div className={styles.redBall} />
+      <Link
+        onClick={linkDeploy ? undefined : (e) => e.preventDefault()}
+        target="_blank"
+        href={linkDeploy ? linkDeploy : ""}
+      >
+        <div className={styles.link}>
+          <div className={styles.firstBox}>
+            <div className={styles.ballsBox}>
+              <div style={{ display: "flex", flexDirection: "row" }}>
+                <div className={styles.redBall} />
 
-                  <div className={styles.yellowBall} />
-                  <div className={styles.greenBall} />
-                </div>
-                <Link target="blank" href={linkGitHub ? linkGitHub : "#"}>
-                  <div className={styles.githubIcon}>
-                    <div
-                      style={{
-                        display: "flex",
-                        flexDirection: "row",
-                        alignItems: "center",
-                        justifyContent: "center",
-                      }}
-                    >
-                      {star ? (
-                        <FaStar
-                          style={{ marginRight: 15 }}
-                          color="#FFD700"
-                          size={35}
-                        />
-                      ) : (
-                        ""
-                      )}
+                <div className={styles.yellowBall} />
+                <div className={styles.greenBall} />
+              </div>
 
-                      {privateStatus ? (
-                        <div
-                          style={{
-                            display: "flex",
-                            alignItems: "center",
-                            justifyContent: "center",
-                            height: 35,
-                          }}
-                        >
-                          <FaLock size={30} />
-                        </div>
-                      ) : (
-                        <div className={styles.githubIcon}>
-                          <FaGithub size={35} />
-                        </div>
-                      )}
-                    </div>
+              <div
+                style={{
+                  display: "flex",
+                  flexDirection: "row",
+                  alignItems: "center",
+                  justifyContent: "center",
+                }}
+              >
+                {star ? (
+                  <FaStar
+                    style={{ marginRight: 15 }}
+                    color="#FFD700"
+                    size={35}
+                  />
+                ) : (
+                  ""
+                )}
+
+                {privateStatus ? (
+                  <div
+                    style={{
+                      display: "flex",
+                      alignItems: "center",
+                      justifyContent: "center",
+                      height: 35,
+                    }}
+                  >
+                    <FaLock size={30} />
                   </div>
-                </Link>
-              </div>
-              <p className={styles.textPrimary}>{name}</p>
-              <p className={styles.textSecondary}>{description}</p>
-            </div>
-            <div className={styles.secondBox}>
-              {icons.map((icon, index) => (
-                <div key={index} className={styles.icon}>
-                  {icon}
-                </div>
-              ))}
-            </div>
-            <div className={styles.lastBox}>
-              <img
-                src={image}
-                alt="Descrição da imagem"
-                style={{ width: 90 }}
-              />
-            </div>
-          </div>
-        </Link>
-      ) : (
-        <div>
-          <div className={styles.link}>
-            <div className={styles.firstBox}>
-              <div className={styles.ballsBox}>
-                <div style={{ display: "flex", flexDirection: "row" }}>
-                  <div className={styles.redBall} />
-
-                  <div className={styles.yellowBall} />
-                  <div className={styles.greenBall} />
-                </div>
-
-                <div
-                  style={{
-                    display: "flex",
-                    flexDirection: "row",
-                    alignItems: "center",
-                    justifyContent: "center",
-                  }}
-                >
-                  {star ? (
-                    <FaStar
-                      style={{ marginRight: 15 }}
-                      color="#FFD700"
-                      size={35}
-                    />
-                  ) : (
-                    ""
-                  )}
-
-                  {privateStatus ? (
-                    <div
-                      style={{
-                        display: "flex",
-                        alignItems: "center",
-                        justifyContent: "center",
-                        height: 35,
-                      }}
-                    >
-                      <FaLock size={30} />
-                    </div>
-                  ) : (
-                    <div className={styles.githubIcon}>
+                ) : (
+                  <div className={styles.githubIcon}>
+                    <a target="_blank" href={linkGitHub ? linkGitHub : "#"}>
                       <FaGithub size={35} />
-                    </div>
-                  )}
-                </div>
+                    </a>
+                  </div>
+                )}
               </div>
-              <p className={styles.textPrimary}>{name}</p>
-              <p className={styles.textSecondary}>{description}</p>
             </div>
-            <div className={styles.secondBox}>
-              {icons.map((icon, index) => (
-                <div key={index} className={styles.icon}>
-                  {icon}
-                </div>
-              ))}
-            </div>
-            <div className={styles.lastBox}>
-              <img
-                src={image}
-                alt="Descrição da imagem"
-                style={{ width: 90 }}
-              />
-            </div>
+            <p className={styles.textPrimary}>{name}</p>
+            <p className={styles.textSecondary}>{description}</p>
+          </div>
+          <div className={styles.secondBox}>
+            {icons.map((icon, index) => (
+              <div key={index} className={styles.icon}>
+                {icon}
+              </div>
+            ))}
+          </div>
+          <div className={styles.lastBox}>
+            <img src={image} alt="Descrição da imagem" style={{ width: 90 }} />
           </div>
         </div>
-      )}
+      </Link>
     </div>
   );
 };

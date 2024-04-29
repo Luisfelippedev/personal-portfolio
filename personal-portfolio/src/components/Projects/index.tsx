@@ -26,10 +26,9 @@ const Projects = () => {
 
       <div className={styles.cardsContainer}>
         {" "}
-        <CardProject privateStatus={true} star={true} project="nobullying" />
-        <CardProject project="devblog" />
-        <CardProject project="cacheredis" />
-        <CardProject project="spatialdata" />
+        <CardProject privateStatus star project="nobullying" />
+        <CardProject project="tridev" />
+        <CardProject project="personalPortfolio" />
       </div>
     </div>
   );
