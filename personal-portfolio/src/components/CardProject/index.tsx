@@ -65,6 +65,7 @@ const CardProject = ({
       description:
         "Aplicação mobile para submissão de denúncias acerca de bullying e assédio no Instituto Federal da Paraíba, Campus Cajazeiras.",
       image: "NoBullyingLogo.svg",
+      linkDeploy: "declaracaoNobullying.pdf",
       icons: [
         <TbBrandReactNative size={25} key="react-native" />,
         <SiStyledcomponents size={25} key="styled-components" />,
