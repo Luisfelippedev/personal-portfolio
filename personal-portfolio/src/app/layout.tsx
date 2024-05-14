@@ -11,7 +11,7 @@ const montserrat = Inter({
 
 export const metadata: Metadata = {
   title: "Luis Felippe",
-  description: "personal portfolio",
+  description: "Olá, sou Luis Felippe, Desenvolvedor Full-Stack.",
   viewport: "width=device-width, initial-scale=1",
 };
 
