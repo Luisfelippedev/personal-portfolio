@@ -99,7 +99,7 @@ export const TimeLine = () => {
             <TimelineTime>2024</TimelineTime>
             <TimelineTitle>Até o momento</TimelineTitle>
             <TimelineBody>
-              Em busca de uma oportunidade como desenvolvedor.
+              Atuando como freelancer em desenvolvimento web.
             </TimelineBody>
           </TimelineContent>
         </TimelineItem>

@@ -80,13 +80,18 @@
 .secondBox{
     @include box;
     gap: 10px;
+    display: flex;
+    flex-wrap: wrap;
+    height: 35px;
 }
 
 .lastBox{
     display: flex;
     align-items: center;
     justify-content: center;
-    padding-top: 13%;
+    height: 150px;
+    // padding-top: 15%;
+    // padding-bottom: 2px;
     flex: 3;
 }
 

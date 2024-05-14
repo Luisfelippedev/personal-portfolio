@@ -28,6 +28,7 @@ const Projects = () => {
         {" "}
         <CardProject privateStatus star project="nobullying" />
         <CardProject project="tridev" />
+        <CardProject project="agendamentoChacara" />
         <CardProject project="personalPortfolio" />
       </div>
     </div>
