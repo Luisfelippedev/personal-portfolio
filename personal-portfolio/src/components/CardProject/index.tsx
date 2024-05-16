@@ -90,7 +90,7 @@ const CardProject = ({
         "Sistema web para submissão e gerenciamento de reservas da chácara do Dandão. Possui dois módulos de usuário, comum e administrador.",
       image: "chacara.png",
       linkGitHub: "https://github.com/Luisfelippedev/agendamento-chacara",
-      linkDeploy: "https://agendamento-chacara.vercel.app/",
+      linkDeploy: "https://www.dandaochacara.com.br/",
       icons: [
         <TbBrandNextjs size={25} key="nextjs" />,
         <BiLogoTypescript size={25} key="typescript" />,
