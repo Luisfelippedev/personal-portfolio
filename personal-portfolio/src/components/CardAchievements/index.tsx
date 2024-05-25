@@ -1,7 +1,7 @@
 // BookComponent.js
 import styles from "./styles.module.scss";
 
-type ProjectType = "nobullying" | "loopis";
+type ProjectType = "nobullying" | "loopis" | "tridev";
 
 interface ProjectDetails {
   name: string;
@@ -23,6 +23,12 @@ export const CardAchievements = ({ project }: { project: ProjectType }) => {
         "Durante um ano e meio, tive a oportunidade de trabalhar na empresa Júnior do IFPB - campus CZ. Meu cargo na empresa evoluiu de trainee para consultor de projetos. Uma digna experiência.",
       image: "loopis.png",
     },
+    tridev: {
+      name: "Tridev Soluções",
+      description:
+        "Até o momento atuo de forma autônoma como consultor e desenvolvedor web full-stack na Tridev Soluções, prestando soluções tecnologicas de ponta a ponta para clientes reais.",
+      image: "logo-no-background.png",
+    },
   };
 
   const { name, description, image } = projectDetails[project];
@@ -36,9 +42,12 @@ export const CardAchievements = ({ project }: { project: ProjectType }) => {
         <div className={styles.insideFirst}></div>
         <div className={styles.insideLast}>
           <div className={styles.imgContainer}>
-            <img src={image} alt="icon" style={{ width: 90 }} />
+            <img
+              src={image}
+              alt="icon"
+              style={{ width: name == "Tridev Soluções" ? 115 : 90 }}
+            />
           </div>
-
           <p className={styles.textDescc}>{description}</p>
         </div>
       </div>

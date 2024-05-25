@@ -46,7 +46,7 @@ const CardProject = ({
     tridev: {
       name: "tridev",
       description:
-        "Landign Page que apresenta a marca Tridev Soluções. A Tridev presta serviços de desenvolvimento de sistemas web.",
+        "Landign Page que apresenta a marca Tridev Soluções. A Tridev presta serviços de consultoria e desenvolvimento de sistemas web de ponta a ponta para clientes reais.",
       linkGitHub: "https://github.com/Luisfelippedev/tridev",
       linkDeploy: "https://www.tridev.com.br/",
       image: "logo-no-background.png",
@@ -176,7 +176,11 @@ const CardProject = ({
             ))}
           </div>
           <div className={styles.lastBox}>
-            <img src={image} alt="Descrição da imagem" style={{ width: 90 }} />
+            <img
+              src={image}
+              alt="Descrição da imagem"
+              style={{ width: name == "chacara-do-dandao" ? 65 : 90 }}
+            />
           </div>
         </div>
       </Link>
