@@ -63,29 +63,32 @@ export const Navbar = () => {
             <ContentCopyIcon style={{ height: "100%" }} />
           </div>
         </div>
-        <Link href="Profile.pdf" target="_blank">
+        {/* <Link href="Profile.pdf" target="_blank">
           <div className={styles.buttonCV}>
             <Button color="primary">CV</Button>
           </div>
+        </Link> */}
+        <Link className={styles.buttonCV} href="Profile.pdf" target="_blank">
+          <Button color="primary">CV</Button>
         </Link>
       </div>
 
       <div className={styles.lastBox}>
-        <a
+        <Link
           href="https://www.linkedin.com/in/luisfelippedev/"
           target="_blank"
           className={styles.textLink}
         >
           LinkedIn
-        </a>
+        </Link>
         <p className={styles.text}>/</p>
-        <a
+        <Link
           href="https://github.com/Luisfelippedev"
           target="_blank"
           className={styles.textLink}
         >
           GitHub
-        </a>
+        </Link>
       </div>
     </motion.div>
   );
