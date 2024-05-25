@@ -1,5 +1,5 @@
 @import '../../themes/index.scss';
-@import url('https://fonts.googleapis.com/css2?family=Caveat:wght@400..700&family=Pacifico&family=Shadows+Into+Light&display=swap');
+@import '@fontsource-variable/caveat';
 
 .card {
     position: relative;
@@ -46,9 +46,9 @@
 
   .textTitle {
     color: rgb(60, 60, 60) !important;
-    font-weight: 200 !important;
+    font-weight: 600 !important;
     font-size: 2rem !important;
-    font-family: "Caveat", cursive;
+    font-family: 'Caveat Variable', cursive;
     font-style: italic !important;
     font-optical-sizing: auto;
 
