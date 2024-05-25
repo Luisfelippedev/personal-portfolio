@@ -27,7 +27,7 @@ const Projects = () => {
       <div className={styles.cardsContainer}>
         {" "}
         <CardProject privateStatus star project="nobullying" />
-        <CardProject project="tridev" />
+        <CardProject star project="tridev" />
         <CardProject project="agendamentoChacara" />
         <CardProject project="personalPortfolio" />
       </div>
