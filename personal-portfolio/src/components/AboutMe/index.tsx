@@ -29,20 +29,25 @@ export const AboutMe = () => {
           </li>
           <li className={styles.textLi}>
             <img src="/seta-direita.png" alt="icon" />
-            Análise e Desenvolvimento de Sistemas (2021-2024)
+            Pós-graduação Lato Sensu, Desenvolvimento Full Stack - Estácio
+            (2024-O momento)
           </li>
           <li className={styles.textLi}>
             <img src="/seta-direita.png" alt="icon" />
-            Técnico em Informática (2017-2019)
+            Análise e Desenvolvimento de Sistemas - IFPB (2021-2024)
+          </li>
+          <li className={styles.textLi}>
+            <img src="/seta-direita.png" alt="icon" />
+            Técnico em Informática - ECIT (2017-2019)
           </li>
           <li className={styles.textLi}>
             <img src="/seta-direita.png" alt="icon" />
             Interesse em desenvolvimento full-stack
           </li>
-          <li className={styles.textLi}>
+          {/* <li className={styles.textLi}>
             <img src="/seta-direita.png" alt="icon" />
             Aberto para oportunidades
-          </li>
+          </li> */}
         </ul>
       </div>
       <div className={styles.timeLineSection}>
