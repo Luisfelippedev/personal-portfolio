@@ -22,7 +22,8 @@ type ProjectType =
   | "tridev"
   | "personalPortfolio"
   | "nobullying"
-  | "agendamentoChacara";
+  | "agendamentoChacara"
+  | "kerigma";
 
 interface ProjectDetails {
   name: string;
@@ -103,6 +104,18 @@ const CardProject = ({
         <BiLogoPostgresql size={25} key="postgres-sql" />,
         <FaDocker size={25} key="docker" />,
         <DiNodejs size={25} key="node-js" />,
+      ],
+    },
+    kerigma: {
+      name: "kerigma-systems",
+      description:
+        "Landign page de abertura, construida para apresentar a marca Kerigma Systems e atrair a atenção de novos clientes para a empresa.",
+      linkDeploy: "https://www.kerigmasystems.com/",
+      image: "kerigma-logo.png",
+      icons: [
+        <TbBrandNextjs size={25} key="nextjs" />,
+        <BiLogoTypescript size={25} key="typescript" />,
+        <FaSass size={25} key="sass" />,
       ],
     },
   };

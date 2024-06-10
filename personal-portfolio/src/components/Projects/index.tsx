@@ -29,6 +29,7 @@ const Projects = () => {
         <CardProject privateStatus star project="nobullying" />
         <CardProject star project="tridev" />
         <CardProject project="agendamentoChacara" />
+        <CardProject privateStatus project="kerigma" />
         <CardProject project="personalPortfolio" />
       </div>
     </div>
