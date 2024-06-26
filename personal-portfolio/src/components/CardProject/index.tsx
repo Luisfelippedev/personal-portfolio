@@ -110,7 +110,7 @@ const CardProject = ({
       name: "kerigma-systems",
       description:
         "Landign page de abertura, construida para apresentar a marca Kerigma Systems e atrair a atenção de novos clientes para a empresa.",
-      linkDeploy: "https://www.kerigmasystems.com/",
+      linkDeploy: "https://www.kerigmasystems.com.br/",
       image: "kerigma-logo.png",
       icons: [
         <TbBrandNextjs size={25} key="nextjs" />,
