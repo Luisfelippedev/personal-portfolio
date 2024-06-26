@@ -31,10 +31,10 @@
     gap: 2rem; /* Espaço entre as colunas */
     box-sizing: border-box;
     
-    @media (max-width: 1440px){
+    @media (max-width: 1650px){
         grid-template-columns: repeat(3, 1fr); /* Cria 3 colunas com larguras iguais */
     }
-    @media (max-width: 1050px){
+    @media (max-width: 1250px){
         grid-template-columns: repeat(2, 1fr); /* Cria 3 colunas com larguras iguais */
     }
     @media (max-width: 680px){
