@@ -21,6 +21,7 @@ export const Achievements = () => {
       </Button>
 
       <div className={styles.cardsContainer}>
+        <CardAchievements project="korporate" />
         <CardAchievements project="tridev" />
         <CardAchievements project="nobullying" />
         <CardAchievements project="loopis" />

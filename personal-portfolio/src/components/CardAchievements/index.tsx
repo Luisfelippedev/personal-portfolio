@@ -1,7 +1,7 @@
 // BookComponent.js
 import styles from "./styles.module.scss";
 
-type ProjectType = "nobullying" | "loopis" | "tridev";
+type ProjectType = "nobullying" | "loopis" | "tridev" | "korporate";
 
 interface ProjectDetails {
   name: string;
@@ -26,8 +26,14 @@ export const CardAchievements = ({ project }: { project: ProjectType }) => {
     tridev: {
       name: "Tridev Soluções",
       description:
-        "Até o momento atuo de forma autônoma como consultor e desenvolvedor web full-stack na Tridev Soluções, prestando soluções tecnologicas de ponta a ponta para clientes reais.",
+        "Atuação de forma autônoma como consultor e desenvolvedor web full-stack na Tridev Soluções, prestando soluções tecnologicas de ponta a ponta para clientes reais.",
       image: "logo-no-background.png",
+    },
+    korporate: {
+      name: "Korporate Solution Factory",
+      description:
+        "Atualmente, atuo como desenvolvedor full-stack na Korporate Solution Factory, trabalhando no desenvolvimento de um sistema voltado para o setor de seguros.",
+      image: "korporate_solution_factory_logo.png",
     },
   };
 
