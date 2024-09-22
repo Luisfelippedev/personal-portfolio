@@ -33,7 +33,8 @@
       display: flex;
       align-items: center;
       justify-content: center;
-
+        flex-direction: column;
+        
     }
   
     &:hover .cover {
@@ -55,6 +56,13 @@
     @media (max-width: 400px) {
         font-size: 1.5rem;
     }
+}
+
+.dateText{
+    font-size: 1.3rem;
+    font-weight: 400;
+    color: rgb(60, 60, 60) !important;
+    font-family: 'Caveat Variable', cursive;
 }
   
 
