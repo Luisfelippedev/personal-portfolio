@@ -49,7 +49,7 @@ const CardProject = ({
       description:
         "Landign Page que apresenta a marca Tridev Soluções. A Tridev presta serviços de consultoria e desenvolvimento de sistemas web de ponta a ponta para clientes reais.",
       linkGitHub: "https://github.com/Luisfelippedev/tridev",
-      linkDeploy: "https://www.tridev.com.br/",
+      linkDeploy: "https://tridev-chi.vercel.app/",
       image: "logo-no-background.png",
       icons: [
         <TbBrandNextjs size={25} key="nextjs" />,
@@ -91,7 +91,7 @@ const CardProject = ({
         "Sistema web para submissão e gerenciamento de reservas da chácara do Dandão. Possui dois módulos de usuário, comum e administrador.",
       image: "chacara.png",
       linkGitHub: "https://github.com/Luisfelippedev/agendamento-chacara",
-      linkDeploy: "https://www.dandaochacara.com.br/",
+      linkDeploy: "https://agendamento-chacara.vercel.app/",
       icons: [
         <TbBrandNextjs size={25} key="nextjs" />,
         <BiLogoTypescript size={25} key="typescript" />,

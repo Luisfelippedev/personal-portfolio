@@ -12,7 +12,7 @@ export const Achievements = () => {
           pointerEvents: "none",
           backgroundColor: "rgba(0, 0, 0, 0.822)",
           height: 50,
-          width: 168,
+          width: 170,
           marginBottom: 20,
         }}
       >

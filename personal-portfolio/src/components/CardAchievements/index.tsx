@@ -37,7 +37,7 @@ export const CardAchievements = ({ project }: { project: ProjectType }) => {
       name: "Korporate Solution Factory",
       date: "07/2024 - Até o momento",
       description:
-        "Atualmente, atuo como desenvolvedor full-stack na Korporate Solution Factory, trabalhando no desenvolvimento de um sistema voltado para o setor de seguros.",
+        "Atualmente, atuo como desenvolvedor front-end na Korporate Solution Factory, trabalhando no desenvolvimento de um sistema voltado para o setor de seguros.",
       image: "korporate_solution_factory_logo.png",
     },
   };

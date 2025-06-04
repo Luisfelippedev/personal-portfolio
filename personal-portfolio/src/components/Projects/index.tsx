@@ -16,7 +16,7 @@ const Projects = () => {
             pointerEvents: "none",
             backgroundColor: "rgba(0, 0, 0, 0.822)",
             height: 50,
-            width: 150,
+            width: 170,
           }}
         >
           <img className={styles.iconClipe} src="/clipe.png" alt="icon" />
