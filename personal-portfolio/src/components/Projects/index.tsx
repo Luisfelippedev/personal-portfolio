@@ -29,7 +29,7 @@ const Projects = () => {
         <CardProject privateStatus star project="nobullying" />
         <CardProject star project="tridev" />
         <CardProject project="agendamentoChacara" />
-        <CardProject privateStatus project="kerigma" />
+        <CardProject privateStatus project="cursoFisioterapia" />
         <CardProject project="personalPortfolio" />
       </div>
     </div>

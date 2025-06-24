@@ -96,7 +96,7 @@ export const TimeLine = () => {
         <TimelineItem>
           <TimelinePoint id="time-line-point" icon={HiCalendar}></TimelinePoint>
           <TimelineContent style={{ marginTop: "1rem" }}>
-            <TimelineTime>2024</TimelineTime>
+            <TimelineTime>...2025</TimelineTime>
             <TimelineTitle>Até o momento</TimelineTitle>
             <TimelineBody>
               Atuando como desenvolvedor front-end na Korporate Korporate

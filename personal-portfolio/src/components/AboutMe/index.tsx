@@ -27,11 +27,11 @@ export const AboutMe = () => {
             Desenvolvendo interfaces de usuário e APIs com Javascript/Typescript
             desde 2022
           </li>
-          <li className={styles.textLi}>
+          {/* <li className={styles.textLi}>
             <img src="/seta-direita.png" alt="icon" />
             Pós-graduação Lato Sensu, Desenvolvimento Full Stack - Estácio
             (2024-O momento)
-          </li>
+          </li> */}
           <li className={styles.textLi}>
             <img src="/seta-direita.png" alt="icon" />
             Análise e Desenvolvimento de Sistemas - IFPB (2021-2024)

@@ -17,13 +17,16 @@ import { BiLogoPostgresql } from "react-icons/bi";
 import { FaDocker } from "react-icons/fa";
 import { DiNodejs } from "react-icons/di";
 import { IoLogoFirebase } from "react-icons/io5";
+import { TbBrandVite } from "react-icons/tb";
+import { SiTailwindcss } from "react-icons/si";
 
 type ProjectType =
   | "tridev"
   | "personalPortfolio"
   | "nobullying"
   | "agendamentoChacara"
-  | "kerigma";
+  // | "kerigma";
+  | "cursoFisioterapia";
 
 interface ProjectDetails {
   name: string;
@@ -91,7 +94,7 @@ const CardProject = ({
         "Sistema web para submissão e gerenciamento de reservas da chácara do Dandão. Possui dois módulos de usuário, comum e administrador.",
       image: "chacara.png",
       linkGitHub: "https://github.com/Luisfelippedev/agendamento-chacara",
-      linkDeploy: "https://agendamento-chacara.vercel.app/",
+      linkDeploy: "https://www.dandaochacara.com.br/",
       icons: [
         <TbBrandNextjs size={25} key="nextjs" />,
         <BiLogoTypescript size={25} key="typescript" />,
@@ -106,16 +109,28 @@ const CardProject = ({
         <DiNodejs size={25} key="node-js" />,
       ],
     },
-    kerigma: {
-      name: "kerigma-systems",
+    // kerigma: {
+    //   name: "kerigma-systems",
+    //   description:
+    //     "Landign page de abertura, construida para apresentar a marca Kerigma Systems e atrair a atenção de novos clientes para a empresa.",
+    //   linkDeploy: "https://www.kerigmasystems.com.br/",
+    //   image: "kerigma-logo.png",
+    //   icons: [
+    //     <TbBrandNextjs size={25} key="nextjs" />,
+    //     <BiLogoTypescript size={25} key="typescript" />,
+    //     <FaSass size={25} key="sass" />,
+    //   ],
+    // },
+    cursoFisioterapia: {
+      name: "curso-fisioterapia",
       description:
-        "Landign page de abertura, construida para apresentar a marca Kerigma Systems e atrair a atenção de novos clientes para a empresa.",
-      linkDeploy: "https://www.kerigmasystems.com.br/",
-      image: "kerigma-logo.png",
+        "Página de vendas, construida para anunciar o curso do Dr. André e atrair a atenção de novos alunos para o treinamento.",
+      linkDeploy: "https://escoliose-dr-andre.vercel.app/",
+      image: "curso-fisioterapia-png.png",
       icons: [
-        <TbBrandNextjs size={25} key="nextjs" />,
+        <TbBrandVite size={25} key="vite" />,
         <BiLogoTypescript size={25} key="typescript" />,
-        <FaSass size={25} key="sass" />,
+        <SiTailwindcss size={25} key="tailwind" />,
       ],
     },
   };
